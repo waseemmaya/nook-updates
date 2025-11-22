@@ -1,0 +1,15 @@
+{
+  "version": "0.2.21",
+  "notes": "See the assets to download this version and install.",
+  "pub_date": "2025-11-22T23:42:31Z",
+  "platforms": {
+    "darwin-aarch64": {
+      "signature": "",
+      "url": "https://github.com/waseemmaya/nook/releases/download/v0.2.21/Nook_0.2.21_aarch64.app.tar.gz"
+    },
+    "darwin-x86_64": {
+      "signature": "",
+      "url": "https://github.com/waseemmaya/nook/releases/download/v0.2.21/Nook_0.2.21_x86_64.app.tar.gz"
+    }
+  }
+}
