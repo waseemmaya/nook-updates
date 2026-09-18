@@ -1,14 +1,14 @@
 {
-  "version": "0.4.0",
+  "version": "0.4.1",
   "notes": "See the assets to download this version and install.",
-  "pub_date": "2026-09-18T20:40:14Z",
+  "pub_date": "2026-09-18T20:57:51Z",
   "platforms": {
     "darwin-aarch64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSUTlkSGZiWDFFaWlXZUQ2ZDd1KytKQWM1aUZqTGVLelVhcWNSN3d4ZFZheW5lZ05aUXFMSGhoQ24wbVRkU2U0VFRnVTArc2YyN1JYQ3drK2JWeWRuTk8wTC92UnltSXc0PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzg5NzYzOTE1CWZpbGU6Tm9vay5hcHAudGFyLmd6CmdxSUhBazdSMFpGa2xtdXJFOHVmLzZWeU1ERlk3NUF2RHlVMUU1WDYvckVNbEdSbS9FTnk0dXdONWxtTnVTVER4Ym5CV2xNT3cyRHppcW9jRnZudkFBPT0K",
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSUTlkSGZiWDFFaXNOOWc3bFRjUDFHZytVZ2FCckM3MmQyZHJqRFB0UWlGcDRUdEI4ZGZCWW51b2gzekxmQzFSZmkwLzJwK3hqWjZIcWR3SlE1V2hMSjZqWFRHTVpHTFFNPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzg5NzY1MDQxCWZpbGU6Tm9vay5hcHAudGFyLmd6CmFoZUF2TVJBMFVtNUVBSHBYMytqMkNFTTNhZEdzeXVvNzBnZHZoN2hUT2tpVXpMN2Y3TFVoM2VNc0NyNVZVVWc0b2FqOFZzeXRQdjIzOU5vRllGSENBPT0K",
       "url": "https://raw.githubusercontent.com/waseemmaya/nook-updates/main/Nook_aarch64.app.tar.gz"
     },
     "darwin-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSUTlkSGZiWDFFaWdyOE9EMXRkRmR4dVU5QSt6M0NibUc4NEpBaXR0SVkycnBCVEYrRGY0b3Uyd0x5UGFUbG1Mb2d4RDlSN2dDdmpwaHg1Qnc2VmU2emxzVjVmNWxaU3dBPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzg5NzYzOTYyCWZpbGU6Tm9vay5hcHAudGFyLmd6ClFLMUxERkF0NzRRTXh5TzRIa3hyaG9Oc2FyTnM3cTRVbC9mT3M0elpwQVhZeEluMUlxQ1lWUzhtQUhraW15VEQ5OENNVWhMVzFIZUkzYmlsZzRGQUNRPT0K",
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSUTlkSGZiWDFFaXM3MzNscHR4SzFwNDRTZE5sbzJ3RkJCU1hoaHBmVjVBZm9lTTRIemtWUFNSSzNicUdtdHlPV0pYRm44MHAvZ1JoV1ZuSHc3VWJ2dURyaUdnaktsRkFjPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzg5NzY1MDUxCWZpbGU6Tm9vay5hcHAudGFyLmd6ClgxTzJXSElJZ1l3dlU1amlkOTZKcVZmSmcwcXc1STFGR05rWTd1STQ0WENqemdJdDg4TlVWUzVMTW80cllHNmZ0c20wcUNlY0IvbkE0azNGeTRSeEF3PT0K",
       "url": "https://raw.githubusercontent.com/waseemmaya/nook-updates/main/Nook_x64.app.tar.gz"
     }
   }
