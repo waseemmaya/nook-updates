@@ -3,23 +3,161 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Nook - Your Cozy Corner for Quick Thoughts</title>
+
+    <!-- Primary Meta Tags -->
+    <title>Nook — Your Workday in the Menu Bar | macOS Menu Bar App</title>
+    <meta
+      name="title"
+      content="Nook — Your Workday in the Menu Bar | macOS Menu Bar App"
+    />
+    <meta
+      name="description"
+      content="Nook is a free macOS menu bar app for developers: quick notes, a weekly work log, Vercel and GitHub Actions deploys, local ports, AI usage limits, Mac health and clipboard history — one click away."
+    />
+    <meta
+      name="keywords"
+      content="Nook, macOS menu bar app, quick notes, work log, weekly progress report, Vercel deployments, GitHub Actions, port manager, clipboard history, Claude usage, Codex usage, Mac health, battery health, developer tools"
+    />
+    <meta name="author" content="Waseem Maya" />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://waseemmaya.github.io/nook-updates/" />
+
+    <!-- Favicons -->
+    <link rel="icon" type="image/png" href="Nook.png" />
+    <link rel="apple-touch-icon" href="Nook.png" />
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://waseemmaya.github.io/nook-updates/" />
+    <meta property="og:title" content="Nook — Your Workday in the Menu Bar" />
+    <meta
+      property="og:description"
+      content="Notes, work log, deploys, ports, AI limits, Mac health and clipboard history in one macOS menu bar app."
+    />
+    <meta
+      property="og:image"
+      content="https://waseemmaya.github.io/nook-updates/Nook.png"
+    />
+    <meta property="og:site_name" content="Nook" />
+    <meta property="og:locale" content="en_US" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="Nook — Your Workday in the Menu Bar" />
+    <meta
+      name="twitter:description"
+      content="Notes, work log, deploys, ports, AI limits, Mac health and clipboard history in one macOS menu bar app. Free."
+    />
+    <meta
+      name="twitter:image"
+      content="https://waseemmaya.github.io/nook-updates/Nook.png"
+    />
+    <meta name="twitter:creator" content="@waseemmaya" />
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap"
+      href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Outfit:wght@300;400;500;600;700&display=swap"
       rel="stylesheet"
     />
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "SoftwareApplication",
+        "name": "Nook",
+        "applicationCategory": "DeveloperApplication",
+        "operatingSystem": "macOS",
+        "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
+        "description": "A macOS menu bar app for developers: quick notes, a weekly work log, Vercel and GitHub Actions deploys, local ports, AI usage limits, Mac health and clipboard history.",
+        "screenshot": "https://waseemmaya.github.io/nook-updates/Nook.png",
+        "author": {
+          "@type": "Person",
+          "name": "Waseem Maya",
+          "url": "https://github.com/waseemmaya"
+        },
+        "downloadUrl": "https://github.com/waseemmaya/nook-updates",
+        "featureList": [
+          "Quick notes that save as you type",
+          "Weekly work log with a copy-ready report and reminders",
+          "Vercel deployments and GitHub Actions with native notifications",
+          "Listening ports with local and network URLs",
+          "Claude Code and Codex usage limits",
+          "Battery, CPU, memory, swap, disk and thermal health",
+          "Clipboard history for text and images, with pins and labels"
+        ]
+      }
+    </script>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "What is Nook?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Nook is a free macOS menu bar app that puts your notes, work log, deploys, local ports, AI usage limits, Mac health and clipboard history one click away."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Is Nook free?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes. Nook is free, with no account, no trial and no subscription."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Where is my data stored?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "On your Mac. Notes, the work log and clipboard history stay in Nook's local app data. Vercel and GitHub tokens are stored in the macOS Keychain."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Why does macOS say Nook can't be opened?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Nook isn't notarized by Apple yet. After moving it to Applications, run: xattr -d com.apple.quarantine /Applications/Nook.app"
+            }
+          }
+        ]
+      }
+    </script>
+
+    <script
+      defer
+      src="https://cloud.umami.is/script.js"
+      data-website-id="bedc06ec-1aee-42d3-9bc3-3c111dbb2859"
+    ></script>
     <style>
       :root {
         --bg-primary: #0a0a0b;
-        --bg-secondary: #141416;
-        --bg-card: #1a1a1f;
+        --bg-secondary: #111113;
+        --bg-elevated: #18181b;
+        --bg-hover: #1f1f23;
+        --border: #27272a;
         --text-primary: #fafafa;
-        --text-secondary: #a0a0a5;
-        --accent: #e8c547;
-        --accent-glow: rgba(232, 197, 71, 0.15);
-        --border: rgba(255, 255, 255, 0.06);
+        --text-secondary: #a1a1aa;
+        --text-muted: #71717a;
+        --accent: #ff9f0a;
+        --accent-teal: #2dd4bf;
+        --accent-orange: #f97316;
+        --accent-red: #ef4444;
+        --accent-yellow: #eab308;
+        --accent-blue: #3b82f6;
+        --gradient-accent: linear-gradient(135deg, #ffb340 0%, #ff9f0a 50%, #f97316 100%);
+        --gradient-teal: linear-gradient(135deg, #2dd4bf 0%, #14b8a6 100%);
+
+        /* Mockup (matches the app) */
+        --app-bg: #1a1a1a;
+        --app-card: #212121;
+        --app-border: #2a2a2a;
       }
 
       * {
@@ -28,135 +166,303 @@
         box-sizing: border-box;
       }
 
+      html {
+        scroll-behavior: smooth;
+      }
+
+      /* Anchored sections clear the fixed nav. */
+      section[id] {
+        scroll-margin-top: 64px;
+      }
+
       body {
-        font-family: "Inter", -apple-system, BlinkMacSystemFont, sans-serif;
+        font-family: "Outfit", -apple-system, BlinkMacSystemFont, sans-serif;
         background: var(--bg-primary);
         color: var(--text-primary);
-        min-height: 100vh;
+        line-height: 1.6;
         overflow-x: hidden;
       }
 
-      /* Animated Background */
-      .bg-pattern {
+      .mono {
+        font-family: "JetBrains Mono", monospace;
+      }
+
+      /* Noise texture overlay */
+      body::before {
+        content: "";
+        position: fixed;
+        inset: 0;
+        background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E");
+        opacity: 0.03;
+        pointer-events: none;
+        z-index: 1000;
+      }
+
+      .grid-bg {
+        position: fixed;
+        inset: 0;
+        background-image: linear-gradient(rgba(255, 255, 255, 0.02) 1px, transparent 1px),
+          linear-gradient(90deg, rgba(255, 255, 255, 0.02) 1px, transparent 1px);
+        background-size: 64px 64px;
+        pointer-events: none;
+      }
+
+      .orb {
+        position: fixed;
+        border-radius: 50%;
+        filter: blur(120px);
+        pointer-events: none;
+      }
+
+      .orb-1 {
+        width: 600px;
+        height: 600px;
+        background: var(--accent);
+        top: -200px;
+        right: -200px;
+        opacity: 0.13;
+      }
+
+      .orb-2 {
+        width: 400px;
+        height: 400px;
+        background: var(--accent-teal);
+        bottom: 20%;
+        left: -100px;
+        opacity: 0.08;
+      }
+
+      /* The logo glyph is black on transparent - shown white here. */
+      .glyph {
+        filter: invert(1);
+        mix-blend-mode: screen; /* drops the (now black) background */
+      }
+
+      /* Navigation */
+      nav {
         position: fixed;
         top: 0;
         left: 0;
-        width: 100%;
-        height: 100%;
-        z-index: 0;
-        pointer-events: none;
-        background: radial-gradient(
-            ellipse 80% 50% at 50% -20%,
-            var(--accent-glow),
-            transparent
-          ),
-          radial-gradient(
-            ellipse 60% 40% at 80% 60%,
-            rgba(139, 92, 246, 0.05),
-            transparent
-          ),
-          radial-gradient(
-            ellipse 50% 30% at 20% 80%,
-            rgba(59, 130, 246, 0.05),
-            transparent
-          );
+        right: 0;
+        z-index: 100;
+        padding: 1rem 2rem;
+        backdrop-filter: blur(20px);
+        -webkit-backdrop-filter: blur(20px);
+        background: rgba(10, 10, 11, 0.8);
+        border-bottom: 1px solid var(--border);
       }
 
-      .grid-overlay {
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        z-index: 0;
-        pointer-events: none;
-        background-image: linear-gradient(var(--border) 1px, transparent 1px),
-          linear-gradient(90deg, var(--border) 1px, transparent 1px);
-        background-size: 60px 60px;
-        mask-image: radial-gradient(
-          ellipse 70% 70% at 50% 30%,
-          black,
-          transparent
-        );
-      }
-
-      .container {
-        position: relative;
-        z-index: 1;
-        max-width: 1100px;
+      .nav-container {
+        max-width: 1200px;
         margin: 0 auto;
-        padding: 0 24px;
-      }
-
-      /* Header */
-      header {
-        padding: 28px 0;
         display: flex;
-        justify-content: space-between;
         align-items: center;
+        justify-content: space-between;
       }
 
       .logo {
         display: flex;
         align-items: center;
-        gap: 12px;
+        gap: 0.6rem;
         text-decoration: none;
+        color: var(--text-primary);
       }
 
-      .logo-img {
-        width: 38px;
-        height: 38px;
-        filter: invert(1);
+      .logo-icon {
+        width: 34px;
+        height: 34px;
+      }
+
+      .logo-icon img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
       }
 
       .logo-text {
-        font-family: "Menlo", "SF Mono", "Monaco", monospace;
-        font-size: 26px;
-        font-weight: 400;
-        color: var(--text-primary);
-        letter-spacing: -0.5px;
+        font-weight: 600;
+        font-size: 1.25rem;
+        letter-spacing: -0.02em;
       }
 
       .nav-links {
         display: flex;
-        gap: 32px;
+        align-items: center;
+        gap: 2rem;
       }
 
       .nav-links a {
-        color: var(--text-secondary);
+        color: var(--text-muted);
         text-decoration: none;
-        font-size: 14px;
+        font-size: 0.9rem;
         font-weight: 500;
         transition: color 0.2s;
       }
 
       .nav-links a:hover {
+        color: var(--text-secondary);
+      }
+
+      .nav-links a.nav-cta,
+      .nav-cta {
+        background: var(--text-primary);
+        color: var(--bg-primary);
+        padding: 0.6rem 1.25rem;
+        border-radius: 8px;
+        font-weight: 600;
+        font-size: 0.9rem;
+        text-decoration: none;
+        transition: all 0.2s;
+      }
+
+      .nav-links a.nav-cta:hover {
+        color: var(--bg-primary);
+        transform: translateY(-1px);
+        box-shadow: 0 4px 20px rgba(255, 255, 255, 0.2);
+      }
+
+      .mobile-menu-btn {
+        display: none;
+        background: transparent;
+        border: none;
+        color: var(--text-primary);
+        cursor: pointer;
+        width: 40px;
+        height: 40px;
+        align-items: center;
+        justify-content: center;
+        border-radius: 6px;
+      }
+
+      .mobile-menu-btn:hover {
+        background: var(--bg-elevated);
+      }
+
+      .mobile-menu-btn svg {
+        width: 24px;
+        height: 24px;
+      }
+
+      .mobile-menu-overlay {
+        display: none;
+        position: fixed;
+        inset: 0;
+        background: rgba(0, 0, 0, 0.7);
+        z-index: 999;
+        opacity: 0;
+        transition: opacity 0.3s ease;
+        pointer-events: none;
+      }
+
+      .mobile-menu-overlay.active {
+        opacity: 1;
+        pointer-events: auto;
+      }
+
+      .mobile-menu {
+        display: none;
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 280px;
+        max-width: 85vw;
+        height: 100vh;
+        background: var(--bg-secondary);
+        border-left: 1px solid var(--border);
+        z-index: 1000;
+        padding: 1.5rem;
+        overflow-y: auto;
+        transition: right 0.3s ease;
+        box-shadow: -4px 0 20px rgba(0, 0, 0, 0.3);
+      }
+
+      .mobile-menu.active {
+        right: 0;
+      }
+
+      .mobile-menu-header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 2rem;
+        padding-bottom: 1rem;
+        border-bottom: 1px solid var(--border);
+      }
+
+      .mobile-menu-close {
+        background: transparent;
+        border: none;
+        color: var(--text-primary);
+        cursor: pointer;
+        width: 36px;
+        height: 36px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 6px;
+      }
+
+      .mobile-menu-close svg {
+        width: 22px;
+        height: 22px;
+      }
+
+      .mobile-menu-links {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+      }
+
+      .mobile-menu-links a {
+        display: block;
+        padding: 0.875rem 1rem;
+        color: var(--text-secondary);
+        text-decoration: none;
+        font-size: 0.95rem;
+        font-weight: 500;
+        border-radius: 8px;
+        transition: all 0.2s;
+      }
+
+      .mobile-menu-links a:hover {
+        background: var(--bg-elevated);
         color: var(--text-primary);
       }
 
-      /* Hero Section */
-      .hero {
+      .mobile-menu-links .nav-cta {
+        color: var(--bg-primary);
+        margin-top: 0.5rem;
         text-align: center;
-        padding: 80px 0 60px;
       }
 
-      .badge {
+      /* Hero */
+      .hero {
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 8rem 2rem 4rem;
+        position: relative;
+      }
+
+      .hero-badge {
         display: inline-flex;
         align-items: center;
-        gap: 8px;
-        background: var(--bg-card);
+        gap: 0.5rem;
+        padding: 0.5rem 1rem;
+        background: var(--bg-elevated);
         border: 1px solid var(--border);
-        padding: 8px 16px;
         border-radius: 100px;
-        font-size: 13px;
+        font-size: 0.85rem;
         color: var(--text-secondary);
-        margin-bottom: 32px;
-        animation: fadeInUp 0.6s ease-out;
+        margin-bottom: 2rem;
       }
 
-      .badge-dot {
-        width: 6px;
-        height: 6px;
+      .hero-badge-dot {
+        width: 8px;
+        height: 8px;
         background: var(--accent);
         border-radius: 50%;
         animation: pulse 2s infinite;
@@ -166,641 +472,1941 @@
         0%,
         100% {
           opacity: 1;
+          transform: scale(1);
         }
         50% {
           opacity: 0.5;
+          transform: scale(0.9);
         }
       }
 
       .hero h1 {
-        font-family: "Menlo", "SF Mono", "Monaco", monospace;
-        font-size: clamp(48px, 8vw, 72px);
-        font-weight: 400;
+        font-size: clamp(3rem, 8vw, 5.5rem);
+        font-weight: 700;
+        letter-spacing: -0.04em;
         line-height: 1.1;
-        margin-bottom: 24px;
-        letter-spacing: -2px;
-        animation: fadeInUp 0.6s ease-out 0.1s backwards;
+        margin-bottom: 1.5rem;
+        max-width: 900px;
       }
 
-      .hero h1 em {
-        font-style: italic;
-        color: var(--accent);
+      .highlight {
+        background: var(--gradient-accent);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
       }
 
-      .hero p {
-        font-size: 18px;
+      .hero-subtitle {
+        font-size: 1.25rem;
         color: var(--text-secondary);
-        max-width: 520px;
-        margin: 0 auto 40px;
+        max-width: 640px;
+        margin-bottom: 3rem;
         line-height: 1.7;
-        animation: fadeInUp 0.6s ease-out 0.2s backwards;
       }
 
-      @keyframes fadeInUp {
-        from {
-          opacity: 0;
-          transform: translateY(20px);
-        }
-        to {
-          opacity: 1;
-          transform: translateY(0);
-        }
-      }
-
-      .cta-group {
+      .hero-cta-group {
         display: flex;
-        justify-content: center;
-        gap: 16px;
+        gap: 1rem;
         flex-wrap: wrap;
-        animation: fadeInUp 0.6s ease-out 0.3s backwards;
+        justify-content: center;
       }
 
-      .btn {
+      .btn-primary,
+      .btn-secondary {
         display: inline-flex;
         align-items: center;
-        gap: 10px;
-        padding: 14px 28px;
+        gap: 0.5rem;
+        padding: 1rem 2rem;
         border-radius: 12px;
-        font-size: 15px;
-        font-weight: 500;
+        font-weight: 600;
+        font-size: 1rem;
         text-decoration: none;
-        transition: all 0.25s ease;
+        transition: all 0.3s;
         cursor: pointer;
-        border: none;
       }
 
       .btn-primary {
-        background: var(--accent);
-        color: #0a0a0b;
-        box-shadow: 0 4px 24px var(--accent-glow);
+        background: var(--gradient-accent);
+        color: var(--bg-primary);
+        border: none;
       }
 
       .btn-primary:hover {
         transform: translateY(-2px);
-        box-shadow: 0 8px 32px rgba(232, 197, 71, 0.25);
+        box-shadow: 0 8px 30px rgba(255, 159, 10, 0.3);
       }
 
       .btn-secondary {
-        background: var(--bg-card);
+        background: var(--bg-elevated);
         color: var(--text-primary);
         border: 1px solid var(--border);
       }
 
       .btn-secondary:hover {
-        background: var(--bg-secondary);
-        border-color: rgba(255, 255, 255, 0.1);
+        background: var(--bg-hover);
+        border-color: var(--text-muted);
       }
 
-      .btn svg {
-        width: 18px;
-        height: 18px;
-      }
-
-      /* App Preview */
-      .preview {
-        margin: 60px auto 0;
-        max-width: 800px;
-        animation: fadeInUp 0.8s ease-out 0.4s backwards;
-      }
-
-      .preview-window {
-        background: var(--bg-card);
-        border: 1px solid var(--border);
-        border-radius: 20px;
-        overflow: hidden;
-        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 20px 50px rgba(0, 0, 0, 0.4),
-          inset 0 1px 0 rgba(255, 255, 255, 0.05);
-      }
-
-      .preview-tabs {
+      .tech-stack {
         display: flex;
-        background: var(--bg-secondary);
-        border-bottom: 1px solid var(--border);
-      }
-
-      .preview-tabs .tab {
-        flex: 1;
-        padding: 14px 20px;
-        font-size: 13px;
-        font-weight: 600;
-        letter-spacing: 1px;
-        color: var(--text-secondary);
-        text-align: center;
-        cursor: pointer;
-        transition: all 0.2s;
-      }
-
-      .preview-tabs .tab.active {
-        background: rgba(232, 197, 71, 0.1);
-        color: var(--accent);
-        border-bottom: 2px solid var(--accent);
-      }
-
-      .preview-toolbar {
-        display: flex;
+        gap: 0.75rem;
         justify-content: center;
-        gap: 32px;
-        padding: 12px 20px;
+        margin-top: 3rem;
+        flex-wrap: wrap;
+      }
+
+      .tech-badge {
+        padding: 0.4rem 0.8rem;
         background: var(--bg-secondary);
-        border-top: 1px solid var(--border);
-        border-radius: 0 0 16px 16px;
+        border: 1px solid var(--border);
+        border-radius: 6px;
+        font-size: 0.75rem;
+        color: var(--text-muted);
+        display: flex;
+        align-items: center;
+        gap: 0.4rem;
       }
 
-      .toolbar-icon {
-        font-size: 16px;
+      .tech-badge svg {
+        width: 14px;
+        height: 14px;
+      }
+
+      /* ---------- App mockup ---------- */
+      .preview {
+        margin-top: 4.5rem;
+        width: 100%;
+        max-width: 620px;
+        position: relative;
+        text-align: left;
+      }
+
+      /* The macOS menu bar strip above the popover */
+      .mac-menubar {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        gap: 1rem;
+        height: 30px;
+        padding: 0 0.9rem;
+        margin-bottom: 4px;
+        border-radius: 10px;
+        background: rgba(255, 255, 255, 0.04);
+        border: 1px solid rgba(255, 255, 255, 0.06);
         color: var(--text-secondary);
+        font-size: 0.78rem;
+      }
+
+      .mac-menubar svg {
+        width: 15px;
+        height: 15px;
+      }
+
+      .tray-item {
+        position: relative;
+        display: flex;
+        align-items: center;
+        gap: 4px;
+        padding: 2px 7px;
+        border-radius: 6px;
+        background: rgba(255, 255, 255, 0.16);
+      }
+
+      .tray-item img {
+        width: 15px;
+        height: 15px;
+      }
+
+      .tray-dot {
+        width: 6px;
+        height: 6px;
+        border-radius: 50%;
+        background: #ffa500;
+        animation: pulse 2s infinite;
+      }
+
+      .app-window-wrap {
+        position: relative;
+        padding-top: 9px;
+      }
+
+      /* Popover arrow pointing at the tray icon */
+      .app-arrow {
+        position: absolute;
+        top: 0;
+        width: 22px;
+        height: 10px;
+        transform: translateX(-50%);
+      }
+
+      .app-window {
+        background: var(--app-bg);
+        border: 1px solid var(--app-border);
+        border-radius: 14px;
+        overflow: hidden;
+        box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.04), 0 25px 60px rgba(0, 0, 0, 0.6),
+          0 0 120px rgba(255, 159, 10, 0.08);
+      }
+
+      .app-header {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        padding: 0.55rem 0.6rem;
+        border-bottom: 1px solid var(--app-border);
+      }
+
+      .app-icon-btn {
+        flex-shrink: 0;
+        width: 26px;
+        height: 26px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 7px;
+        color: #8b8b96;
+      }
+
+      .app-icon-btn svg {
+        width: 14px;
+        height: 14px;
+      }
+
+      .app-tabs {
+        flex: 1;
+        min-width: 0;
+        display: flex;
+        gap: 2px;
+        padding: 2px;
+        background: #121212;
+        border-radius: 9px;
+        overflow-x: auto;
+        scrollbar-width: none;
+      }
+
+      .app-tabs::-webkit-scrollbar {
+        display: none;
+      }
+
+      .app-tab {
+        flex: 1 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 5px;
+        padding: 5px 8px;
+        border: none;
+        border-radius: 7px;
+        background: transparent;
+        color: #9ca3af;
+        font: 500 0.72rem "Outfit", sans-serif;
         cursor: pointer;
-        transition: color 0.2s;
+        white-space: nowrap;
+        transition: background 0.2s, color 0.2s;
       }
 
-      .toolbar-icon:hover {
-        color: var(--text-primary);
+      .app-tab svg {
+        width: 13px;
+        height: 13px;
       }
 
-      .preview-content {
-        padding: 24px 28px;
-        min-height: 220px;
-        font-family: "Menlo", "SF Mono", "Monaco", monospace;
-        font-size: 14px;
-        line-height: 1.7;
-        color: var(--text-secondary);
+      .app-tab:hover {
+        color: #f3f4f6;
       }
 
-      .preview-content .typed-line {
-        opacity: 0;
-        animation: typeFade 0.5s ease forwards;
+      .app-tab.active {
+        background: var(--accent);
+        color: #1a1a1a;
+        font-weight: 600;
       }
 
-      .preview-content .typed-line:nth-child(1) {
-        animation-delay: 0.6s;
-      }
-      .preview-content .typed-line:nth-child(2) {
-        animation-delay: 1s;
-      }
-      .preview-content .typed-line:nth-child(3) {
-        animation-delay: 1.3s;
-      }
-      .preview-content .typed-line:nth-child(4) {
-        animation-delay: 1.6s;
-      }
-      .preview-content .typed-line:nth-child(5) {
-        animation-delay: 2s;
+      .app-body {
+        height: 360px;
+        overflow: hidden;
+        position: relative;
       }
 
-      @keyframes typeFade {
+      .panel {
+        display: none;
+        height: 100%;
+        animation: fadeIn 0.25s ease-out;
+      }
+
+      .panel.active {
+        display: flex;
+        flex-direction: column;
+      }
+
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+          transform: translateY(4px);
+        }
         to {
           opacity: 1;
+          transform: none;
         }
       }
 
-      .preview-content .cursor {
+      /* Shared mockup bits */
+      .m-toolbar {
+        display: flex;
+        align-items: center;
+        gap: 0.4rem;
+        padding: 0.55rem 0.75rem;
+        border-bottom: 1px solid var(--app-border);
+        font-size: 0.7rem;
+        color: #8b8b96;
+      }
+
+      .chip {
+        padding: 2px 8px;
+        border-radius: 100px;
+        border: 1px solid var(--app-border);
+        background: #151515;
+        color: #9ca3af;
+        font-size: 0.66rem;
+        white-space: nowrap;
+      }
+
+      .chip.on {
+        background: rgba(255, 159, 10, 0.15);
+        border-color: rgba(255, 159, 10, 0.45);
+        color: var(--accent);
+      }
+
+      .m-list {
+        flex: 1;
+        overflow: hidden;
+      }
+
+      .m-row {
+        display: flex;
+        align-items: flex-start;
+        gap: 0.6rem;
+        padding: 0.6rem 0.75rem;
+        border-bottom: 1px solid #1f1f1f;
+        font-size: 0.75rem;
+      }
+
+      .m-title {
+        color: #f3f4f6;
+        font-weight: 600;
+      }
+
+      .m-sub {
+        color: #8b8b96;
+        font-size: 0.68rem;
+      }
+
+      .m-grow {
+        flex: 1;
+        min-width: 0;
+      }
+
+      .m-trunc {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+      }
+
+      .dot {
+        flex-shrink: 0;
+        width: 8px;
+        height: 8px;
+        margin-top: 5px;
+        border-radius: 50%;
+      }
+
+      .dot.building {
+        background: var(--accent-orange);
+        box-shadow: 0 0 0 3px rgba(249, 115, 22, 0.2);
+        animation: pulse 1.5s infinite;
+      }
+
+      .m-icons {
+        display: flex;
+        gap: 6px;
+        color: #6b7280;
+      }
+
+      .m-icons svg {
+        width: 13px;
+        height: 13px;
+      }
+
+      .tag {
+        display: inline-block;
+        padding: 0 6px;
+        border-radius: 6px;
+        background: rgba(255, 255, 255, 0.08);
+        color: #f3f4f6;
+        font-size: 0.66rem;
+        font-weight: 600;
+      }
+
+      .m-section {
+        padding: 0.45rem 0.75rem;
+        font-size: 0.62rem;
+        font-weight: 700;
+        letter-spacing: 0.12em;
+        text-transform: uppercase;
+        color: #d1d5db;
+        background: #161616;
+        border-bottom: 1px solid #1f1f1f;
+      }
+
+      .bar {
+        height: 6px;
+        border-radius: 100px;
+        background: #2a2a2a;
+        overflow: hidden;
+      }
+
+      .bar > span {
+        display: block;
+        height: 100%;
+        border-radius: inherit;
+      }
+
+      /* Note */
+      .note-area {
+        flex: 1;
+        padding: 1rem 1.1rem;
+        font-size: 0.86rem;
+        line-height: 1.75;
+        color: #e5e7eb;
+        background: #1c1c1c;
+      }
+
+      .note-area .muted {
+        color: #9ca3af;
+      }
+
+      .cursor {
         display: inline-block;
         width: 2px;
-        height: 20px;
-        background: var(--accent);
+        height: 1em;
         margin-left: 2px;
-        animation: blink 1s infinite;
-        vertical-align: text-bottom;
+        vertical-align: -2px;
+        background: var(--accent);
+        animation: blink 1s step-end infinite;
       }
 
       @keyframes blink {
-        0%,
         50% {
-          opacity: 1;
-        }
-        51%,
-        100% {
           opacity: 0;
         }
       }
 
-      /* Features Section */
-      .features {
-        padding: 100px 0;
+      .note-tools {
+        display: flex;
+        align-items: center;
+        gap: 0.9rem;
+        padding: 0.5rem 0.9rem;
+        border-top: 1px solid var(--app-border);
+        font-size: 0.7rem;
+        color: #8b8b96;
       }
 
-      .features-header {
-        text-align: center;
-        margin-bottom: 48px;
+      .note-slider {
+        flex: 0 0 90px;
+        height: 4px;
+        border-radius: 4px;
+        background: linear-gradient(90deg, var(--accent) 45%, #333 45%);
       }
 
-      .features-header h2 {
-        font-family: "Menlo", "SF Mono", "Monaco", monospace;
-        font-size: clamp(32px, 5vw, 42px);
-        font-weight: 400;
-        margin-bottom: 16px;
-        letter-spacing: -1px;
-        line-height: 1.2;
+      /* Work */
+      .week-head {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0.6rem 0.75rem;
+        border-bottom: 1px solid var(--app-border);
+        font-size: 0.74rem;
       }
 
-      .features-header h2 em {
-        font-style: italic;
-        color: var(--accent);
+      .copy-btn {
+        padding: 3px 10px;
+        border-radius: 7px;
+        background: var(--accent);
+        color: #1a1a1a;
+        font-weight: 700;
+        font-size: 0.66rem;
       }
 
-      .features-header p {
-        color: var(--text-secondary);
-        font-size: 17px;
+      .day {
+        padding: 0.5rem 0.75rem 0.2rem;
+        font-size: 0.64rem;
+        font-weight: 700;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        color: #8b8b96;
       }
 
-      /* Two Notes Section */
-      .two-notes {
-        text-align: center;
-        margin-bottom: 100px;
-      }
-
-      .two-notes .intro-text {
-        color: var(--text-secondary);
-        font-size: 17px;
-        margin-bottom: 32px;
-      }
-
-      .notes-grid {
+      .task {
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-        gap: 24px;
-        max-width: 700px;
-        margin: 0 auto 32px;
+        grid-template-columns: 1fr 70px 44px;
+        align-items: center;
+        gap: 0.6rem;
+        padding: 0.35rem 0.75rem;
+        font-size: 0.74rem;
       }
 
-      .note-card {
-        background: var(--bg-card);
+      .task .link {
+        color: var(--accent);
+        font-size: 0.64rem;
+      }
+
+      .reminder {
+        margin-top: auto;
+        display: flex;
+        align-items: center;
+        gap: 0.4rem;
+        padding: 0.55rem 0.75rem;
+        border-top: 1px solid var(--app-border);
+        font-size: 0.68rem;
+        color: #8b8b96;
+      }
+
+      /* Cards (AI, Health) */
+      .cards {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 0.6rem;
+        padding: 0.75rem;
+      }
+
+      .card {
+        background: var(--app-card);
+        border: 1px solid var(--app-border);
+        border-radius: 11px;
+        padding: 0.7rem 0.8rem;
+        font-size: 0.72rem;
+      }
+
+      .card-label {
+        font-size: 0.6rem;
+        font-weight: 700;
+        letter-spacing: 0.12em;
+        text-transform: uppercase;
+        color: #8b8b96;
+      }
+
+      .card-value {
+        margin: 0.15rem 0 0.35rem;
+        font-size: 1.25rem;
+        font-weight: 700;
+        letter-spacing: -0.02em;
+        color: #f3f4f6;
+      }
+
+      .ai-card {
+        grid-column: span 2;
+      }
+
+      .ai-window {
+        margin-top: 0.55rem;
+      }
+
+      .ai-window-row {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 4px;
+        color: #f0eeed;
+      }
+
+      .ai-window-row b {
+        font-weight: 700;
+      }
+
+      /* Clipboard */
+      .search {
+        display: flex;
+        align-items: center;
+        gap: 0.4rem;
+        margin: 0.6rem 0.75rem;
+        padding: 0.4rem 0.6rem;
+        border: 1px solid var(--app-border);
+        border-radius: 8px;
+        background: #151515;
+        color: #6b7280;
+        font-size: 0.72rem;
+      }
+
+      .search svg {
+        width: 12px;
+        height: 12px;
+      }
+
+      .thumb {
+        flex-shrink: 0;
+        width: 52px;
+        height: 34px;
+        border-radius: 6px;
+        border: 1px solid var(--app-border);
+        background: linear-gradient(135deg, #ff9f0a 0%, #f97316 35%, #2dd4bf 100%);
+      }
+
+      .mockup-caption {
+        margin-top: 1rem;
+        text-align: center;
+        font-size: 0.8rem;
+        color: var(--text-muted);
+      }
+
+      /* ---------- Sections ---------- */
+      .features,
+      .tabs-section {
+        padding: 8rem 2rem;
+        position: relative;
+      }
+
+      .section-header {
+        text-align: center;
+        margin-bottom: 4rem;
+      }
+
+      .section-label {
+        font-size: 0.8rem;
+        font-weight: 600;
+        color: var(--accent);
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+        margin-bottom: 1rem;
+      }
+
+      .section-title {
+        font-size: clamp(2rem, 5vw, 3rem);
+        font-weight: 700;
+        letter-spacing: -0.03em;
+        line-height: 1.15;
+        margin-bottom: 1rem;
+      }
+
+      .section-desc {
+        color: var(--text-secondary);
+        max-width: 600px;
+        margin: 0 auto;
+        font-size: 1.1rem;
+      }
+
+      .features-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+        gap: 1.5rem;
+        max-width: 1200px;
+        margin: 0 auto;
+      }
+
+      .feature-card {
+        background: var(--bg-secondary);
         border: 1px solid var(--border);
         border-radius: 16px;
-        padding: 32px;
-        text-align: center;
-        transition: all 0.3s ease;
+        padding: 2rem;
+        transition: all 0.3s;
       }
 
-      .note-card:hover {
+      .feature-card:hover {
+        border-color: var(--text-muted);
         transform: translateY(-4px);
-        border-color: rgba(255, 255, 255, 0.1);
       }
 
-      .note-card.draft {
-        border-top: 3px solid var(--accent);
-      }
-
-      .note-card.personal {
-        border-top: 3px solid #6b7280;
-      }
-
-      .note-label {
-        font-family: "Menlo", "SF Mono", "Monaco", monospace;
-        font-size: 24px;
-        font-weight: 500;
-        margin-bottom: 12px;
-      }
-
-      .note-card p {
-        color: var(--text-secondary);
-        font-size: 15px;
-        font-style: italic;
-      }
-
-      .two-notes .outro-text {
-        color: var(--text-secondary);
-        font-size: 16px;
-        max-width: 500px;
-        margin: 0 auto;
-        line-height: 1.7;
-      }
-
-      /* Sync Section */
-      .sync-section {
-        text-align: center;
-        padding: 60px 0;
-      }
-
-      .sync-section h2 {
-        font-family: "Menlo", "SF Mono", "Monaco", monospace;
-        font-size: clamp(32px, 5vw, 42px);
-        font-weight: 400;
-        margin-bottom: 24px;
-        letter-spacing: -1px;
-        line-height: 1.2;
-      }
-
-      .sync-section h2 em {
-        font-style: italic;
+      .feature-icon {
+        width: 48px;
+        height: 48px;
+        background: var(--bg-elevated);
+        border-radius: 12px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 1.25rem;
         color: var(--accent);
       }
 
-      .sync-intro {
-        color: var(--text-primary);
-        font-size: 18px;
-        margin-bottom: 16px;
+      .feature-icon svg {
+        width: 22px;
+        height: 22px;
       }
 
-      .sync-body {
+      .feature-card h3 {
+        font-size: 1.2rem;
+        font-weight: 600;
+        margin-bottom: 0.75rem;
+        letter-spacing: -0.01em;
+      }
+
+      .feature-card p {
         color: var(--text-secondary);
-        font-size: 16px;
-        max-width: 540px;
-        margin: 0 auto 40px;
-        line-height: 1.7;
+        font-size: 0.95rem;
+        line-height: 1.6;
       }
 
-      .sync-quote {
-        background: var(--bg-card);
-        border: 1px solid var(--border);
-        border-left: 3px solid var(--accent);
-        border-radius: 0 12px 12px 0;
-        padding: 24px 32px;
-        max-width: 420px;
+      .feature-card ul {
+        list-style: none;
+        margin-top: 1rem;
+        display: flex;
+        flex-direction: column;
+        gap: 0.45rem;
+      }
+
+      .feature-card li {
+        position: relative;
+        padding-left: 1.1rem;
+        color: var(--text-secondary);
+        font-size: 0.9rem;
+      }
+
+      .feature-card li::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0.62em;
+        width: 5px;
+        height: 5px;
+        border-radius: 50%;
+        background: var(--accent);
+      }
+
+      /* Band: "Light on your Mac" */
+      .band {
+        padding: 6rem 2rem;
+        background: var(--bg-secondary);
+        border-top: 1px solid var(--border);
+        border-bottom: 1px solid var(--border);
+      }
+
+      .band-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1rem;
+        max-width: 1100px;
         margin: 0 auto;
       }
 
-      .sync-quote p {
+      .band-item {
+        display: flex;
+        gap: 0.85rem;
+        padding: 1.25rem 1.4rem;
+        background: var(--bg-primary);
+        border: 1px solid var(--border);
+        border-radius: 12px;
+      }
+
+      .band-item .status-indicator {
+        flex-shrink: 0;
+        width: 10px;
+        height: 10px;
+        margin-top: 0.45rem;
+        border-radius: 50%;
+      }
+
+      .band-item h4 {
+        font-size: 1rem;
+        font-weight: 600;
+        margin-bottom: 0.2rem;
+      }
+
+      .band-item p {
         color: var(--text-secondary);
-        font-size: 15px;
-        font-style: italic;
+        font-size: 0.88rem;
+        line-height: 1.55;
+      }
+
+      /* FAQ */
+      .faq-section {
+        padding: 8rem 2rem;
+        position: relative;
+      }
+
+      .faq-container {
+        max-width: 800px;
+        margin: 0 auto;
+      }
+
+      .faq-item {
+        background: var(--bg-secondary);
+        border: 1px solid var(--border);
+        border-radius: 12px;
+        margin-bottom: 1rem;
+        transition: all 0.3s;
+      }
+
+      .faq-item:hover {
+        border-color: var(--text-muted);
+      }
+
+      .faq-item[open] {
+        border-color: var(--accent);
+      }
+
+      .faq-question {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 1rem;
+        padding: 1.25rem 1.5rem;
+        cursor: pointer;
+        font-weight: 600;
+        font-size: 1.05rem;
+        list-style: none;
+        user-select: none;
+      }
+
+      .faq-question::-webkit-details-marker {
+        display: none;
+      }
+
+      .faq-question:hover {
+        color: var(--accent);
+      }
+
+      .faq-icon {
+        flex-shrink: 0;
+        transition: transform 0.3s;
+        color: var(--text-muted);
+      }
+
+      .faq-item[open] .faq-icon {
+        transform: rotate(180deg);
+        color: var(--accent);
+      }
+
+      .faq-answer {
+        padding: 0 1.5rem 1.5rem;
+        color: var(--text-secondary);
         line-height: 1.7;
       }
 
-      /* Download Section */
-      .download {
-        padding: 80px 0;
-        text-align: center;
+      .faq-answer p + p {
+        margin-top: 0.75rem;
       }
 
-      .download-box {
-        background: linear-gradient(
-          135deg,
-          var(--bg-card) 0%,
-          var(--bg-secondary) 100%
-        );
-        border: 1px solid var(--border);
-        border-radius: 24px;
-        padding: 60px 40px;
-        position: relative;
-        overflow: hidden;
-      }
-
-      .download-box::before {
-        content: "";
-        position: absolute;
-        top: -50%;
-        left: -50%;
-        width: 200%;
-        height: 200%;
-        background: radial-gradient(
-          circle,
-          var(--accent-glow) 0%,
-          transparent 50%
-        );
-        opacity: 0.5;
-      }
-
-      .download-box > * {
-        position: relative;
-      }
-
-      .download h2 {
-        font-family: "Menlo", "SF Mono", "Monaco", monospace;
-        font-size: 38px;
-        font-weight: 400;
-        margin-bottom: 16px;
-        letter-spacing: -1px;
-      }
-
-      .download p {
-        color: var(--text-secondary);
-        font-size: 17px;
-        margin-bottom: 32px;
-      }
-
-      .download-buttons {
-        display: flex;
-        justify-content: center;
-        gap: 16px;
-        flex-wrap: wrap;
-      }
-
-      .platform-badge {
-        font-size: 12px;
-        color: var(--text-secondary);
-        margin-top: 20px;
-      }
-
-      /* Footer */
-      footer {
-        padding: 40px 0;
-        border-top: 1px solid var(--border);
-        text-align: center;
-      }
-
-      footer p {
-        color: var(--text-secondary);
-        font-size: 14px;
-      }
-
-      footer a {
+      .faq-answer a {
         color: var(--accent);
         text-decoration: none;
       }
 
-      footer a:hover {
-        text-decoration: underline;
+      code {
+        background: var(--bg-elevated);
+        padding: 0.1rem 0.4rem;
+        border-radius: 4px;
+        font-family: "JetBrains Mono", monospace;
+        font-size: 0.85em;
+      }
+
+      /* Setup */
+      .how-it-works {
+        padding: 8rem 2rem;
+        position: relative;
+      }
+
+      .steps-container {
+        max-width: 900px;
+        margin: 0 auto;
+      }
+
+      .step {
+        display: grid;
+        grid-template-columns: auto 1fr;
+        gap: 2rem;
+        margin-bottom: 3rem;
+        align-items: start;
+      }
+
+      .step-number {
+        width: 48px;
+        height: 48px;
+        background: var(--bg-elevated);
+        border: 1px solid var(--border);
+        border-radius: 12px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: 700;
+        font-size: 1.1rem;
+        color: var(--accent);
+      }
+
+      .step-content {
+        min-width: 0; /* lets the command box scroll instead of widening the page */
+      }
+
+      .step-content h3 {
+        font-size: 1.25rem;
+        font-weight: 600;
+        margin-bottom: 0.5rem;
+      }
+
+      .step-content p {
+        color: var(--text-secondary);
+        line-height: 1.7;
+      }
+
+      .step-content a {
+        color: var(--accent);
+        text-decoration: none;
+      }
+
+      .step-code {
+        margin-top: 1rem;
+        padding: 1rem 1.25rem;
+        background: var(--bg-secondary);
+        border: 1px solid var(--border);
+        border-radius: 10px;
+        font-size: 0.85rem;
+        color: var(--text-secondary);
+        overflow-x: auto;
+        white-space: nowrap;
+      }
+
+      .step-code .cmd {
+        color: var(--accent);
+      }
+
+      .step-note {
+        font-size: 0.85rem;
+        color: var(--text-muted) !important;
+        margin-top: 0.75rem;
+      }
+
+      /* CTA */
+      .cta-section {
+        padding: 8rem 2rem;
+        text-align: center;
+        position: relative;
+      }
+
+      .cta-section::before {
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 600px;
+        height: 600px;
+        max-width: 100vw;
+        background: var(--accent);
+        filter: blur(200px);
+        opacity: 0.1;
+        pointer-events: none;
+      }
+
+      .cta-title {
+        font-size: clamp(2rem, 5vw, 3.5rem);
+        font-weight: 700;
+        letter-spacing: -0.03em;
+        margin-bottom: 1.5rem;
+        position: relative;
+      }
+
+      .cta-desc {
+        color: var(--text-secondary);
+        font-size: 1.1rem;
+        max-width: 520px;
+        margin: 0 auto 2.5rem;
+        position: relative;
+      }
+
+      .download-buttons {
+        display: flex;
+        gap: 1rem;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin-bottom: 1.5rem;
+        position: relative;
+      }
+
+      .download-note {
+        color: var(--text-muted);
+        font-size: 0.9rem;
+        position: relative;
+      }
+
+      .download-note a {
+        color: var(--text-secondary);
+        text-decoration: none;
+        transition: color 0.2s;
+      }
+
+      .download-note a:hover {
+        color: var(--accent);
+      }
+
+      /* Footer */
+      footer {
+        padding: 3rem 2rem;
+        border-top: 1px solid var(--border);
+      }
+
+      .footer-content {
+        max-width: 1200px;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 1rem;
+      }
+
+      .footer-left {
+        display: flex;
+        align-items: center;
+        gap: 0.6rem;
+      }
+
+      .footer-logo {
+        width: 26px;
+        height: 26px;
+      }
+
+      .footer-text {
+        color: var(--text-muted);
+        font-size: 0.9rem;
+      }
+
+      .footer-text a {
+        color: var(--text-secondary);
+        text-decoration: none;
+      }
+
+      .footer-links {
+        display: flex;
+        gap: 2rem;
+      }
+
+      .footer-links a {
+        color: var(--text-muted);
+        text-decoration: none;
+        font-size: 0.9rem;
+        transition: color 0.2s;
+      }
+
+      .footer-links a:hover {
+        color: var(--text-primary);
+      }
+
+      @media (max-width: 960px) {
+        .band-grid {
+          grid-template-columns: repeat(2, 1fr);
+        }
       }
 
       /* Responsive */
       @media (max-width: 768px) {
+        .band-grid {
+          grid-template-columns: 1fr;
+        }
+
+        nav {
+          padding: 1rem;
+        }
+
         .nav-links {
           display: none;
         }
 
+        .mobile-menu-btn {
+          display: flex;
+        }
+
+        .mobile-menu-overlay,
+        .mobile-menu {
+          display: block;
+        }
+
         .hero {
-          padding: 60px 0 40px;
+          padding: 7rem 1rem 3rem;
         }
 
-        .preview-content {
-          padding: 24px;
-          font-size: 14px;
+        .hero-subtitle {
+          font-size: 1.1rem;
         }
 
-        .features {
-          padding: 60px 0;
+        .hero-cta-group,
+        .download-buttons {
+          flex-direction: column;
+          width: 100%;
+          max-width: 320px;
+          margin-left: auto;
+          margin-right: auto;
         }
 
-        .download-box {
-          padding: 40px 24px;
+        .btn-primary,
+        .btn-secondary {
+          justify-content: center;
+          width: 100%;
+        }
+
+        .preview {
+          margin-top: 3rem;
+        }
+
+        .app-tab span {
+          display: none;
+        }
+
+        .app-tab.active span {
+          display: inline;
+        }
+
+        .app-body {
+          height: 380px;
+        }
+
+        .features,
+        .tabs-section,
+        .how-it-works,
+        .faq-section,
+        .cta-section {
+          padding: 5rem 1rem;
+        }
+
+        .band {
+          padding: 4rem 1rem;
+        }
+
+        .features-grid {
+          grid-template-columns: 1fr;
+        }
+
+        .faq-question {
+          padding: 1rem;
+          font-size: 0.95rem;
+        }
+
+        .faq-answer {
+          padding: 0 1rem 1rem;
+          font-size: 0.92rem;
+        }
+
+        .step {
+          grid-template-columns: 1fr;
+          gap: 1rem;
+        }
+
+        .step-number {
+          width: 40px;
+          height: 40px;
+        }
+
+        .footer-content {
+          flex-direction: column;
+          text-align: center;
+        }
+
+        .footer-links {
+          flex-wrap: wrap;
+          justify-content: center;
+        }
+      }
+
+      @media (max-width: 420px) {
+        .cards {
+          grid-template-columns: 1fr;
+        }
+
+        .ai-card {
+          grid-column: auto;
+        }
+
+        .task {
+          grid-template-columns: 1fr 44px;
+        }
+
+        .task .bar {
+          display: none;
+        }
+      }
+
+      @media (prefers-reduced-motion: reduce) {
+        *,
+        *::before,
+        *::after {
+          animation: none !important;
+          transition: none !important;
+        }
+
+        html {
+          scroll-behavior: auto;
         }
       }
     </style>
   </head>
   <body>
-    <div class="bg-pattern"></div>
-    <div class="grid-overlay"></div>
+    <div class="grid-bg" aria-hidden="true"></div>
+    <div class="orb orb-1" aria-hidden="true"></div>
+    <div class="orb orb-2" aria-hidden="true"></div>
 
-    <div class="container">
-      <header>
+    <!-- Icon sprite (lucide) -->
+    <svg width="0" height="0" style="position: absolute" aria-hidden="true">
+      <defs>
+        <symbol id="i-note" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9" /><path d="M16.376 3.622a1 1 0 0 1 3.002 3.002L7.368 18.635a2 2 0 0 1-.855.506l-2.872.838a.5.5 0 0 1-.62-.62l.838-2.872a2 2 0 0 1 .506-.854z" /></symbol>
+        <symbol id="i-rocket" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09z" /><path d="m12 15-3-3a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.35 22.35 0 0 1-4 2z" /><path d="M9 12H4s.55-3.03 2-4c1.62-1.08 5 0 5 0" /><path d="M12 15v5s3.03-.55 4-2c1.08-1.62 0-5 0-5" /></symbol>
+        <symbol id="i-port" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m15 20 3-3h2a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h2l3 3z" /><path d="M6 8v1" /><path d="M10 8v1" /><path d="M14 8v1" /><path d="M18 8v1" /></symbol>
+        <symbol id="i-checks" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m3 17 2 2 4-4" /><path d="m3 7 2 2 4-4" /><path d="M13 6h8" /><path d="M13 12h8" /><path d="M13 18h8" /></symbol>
+        <symbol id="i-sparkles" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9.937 15.5A2 2 0 0 0 8.5 14.063l-6.135-1.582a.5.5 0 0 1 0-.962L8.5 9.936A2 2 0 0 0 9.937 8.5l1.582-6.135a.5.5 0 0 1 .963 0L14.063 8.5A2 2 0 0 0 15.5 9.937l6.135 1.581a.5.5 0 0 1 0 .964L15.5 14.063a2 2 0 0 0-1.437 1.437l-1.582 6.135a.5.5 0 0 1-.963 0z" /><path d="M20 3v4" /><path d="M22 5h-4" /></symbol>
+        <symbol id="i-heart" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z" /><path d="M3.22 12H9.5l.5-1 2 4.5 2-7 1.5 3.5h5.27" /></symbol>
+        <symbol id="i-clipboard" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="8" height="4" x="8" y="2" rx="1" ry="1" /><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2" /><path d="M12 11h4" /><path d="M12 16h4" /><path d="M8 11h.01" /><path d="M8 16h.01" /></symbol>
+        <symbol id="i-pin" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 17v5" /><path d="M9 10.76a2 2 0 0 1-1.11 1.79l-1.78.9A2 2 0 0 0 5 15.24V16a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-.76a2 2 0 0 0-1.11-1.79l-1.78-.9A2 2 0 0 1 15 10.76V7a1 1 0 0 1 1-1 2 2 0 0 0 0-4H8a2 2 0 0 0 0 4 1 1 0 0 1 1 1z" /></symbol>
+        <symbol id="i-gear" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12.22 2h-.44a2 2 0 0 0-2 2v.18a2 2 0 0 1-1 1.73l-.43.25a2 2 0 0 1-2 0l-.15-.08a2 2 0 0 0-2.73.73l-.22.38a2 2 0 0 0 .73 2.73l.15.1a2 2 0 0 1 1 1.72v.51a2 2 0 0 1-1 1.74l-.15.09a2 2 0 0 0-.73 2.73l.22.38a2 2 0 0 0 2.73.73l.15-.08a2 2 0 0 1 2 0l.43.25a2 2 0 0 1 1 1.73V20a2 2 0 0 0 2 2h.44a2 2 0 0 0 2-2v-.18a2 2 0 0 1 1-1.73l.43-.25a2 2 0 0 1 2 0l.15.08a2 2 0 0 0 2.73-.73l.22-.39a2 2 0 0 0-.73-2.73l-.15-.08a2 2 0 0 1-1-1.74v-.5a2 2 0 0 1 1-1.74l.15-.09a2 2 0 0 0 .73-2.73l-.22-.38a2 2 0 0 0-2.73-.73l-.15.08a2 2 0 0 1-2 0l-.43-.25a2 2 0 0 1-1-1.73V4a2 2 0 0 0-2-2z" /><circle cx="12" cy="12" r="3" /></symbol>
+        <symbol id="i-copy" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="14" height="14" x="8" y="8" rx="2" ry="2" /><path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2" /></symbol>
+        <symbol id="i-open" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 3h6v6" /><path d="M10 14 21 3" /><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" /></symbol>
+        <symbol id="i-x" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6 6 18" /><path d="m6 6 12 12" /></symbol>
+        <symbol id="i-search" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8" /><path d="m21 21-4.3-4.3" /></symbol>
+        <symbol id="i-bell" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10.268 21a2 2 0 0 0 3.464 0" /><path d="M3.262 15.326A1 1 0 0 0 4 17h16a1 1 0 0 0 .74-1.673C19.41 13.956 18 12.499 18 8A6 6 0 0 0 6 8c0 4.499-1.411 5.956-2.738 7.326" /></symbol>
+        <symbol id="i-download" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" /><polyline points="7 10 12 15 17 10" /><line x1="12" y1="15" x2="12" y2="3" /></symbol>
+        <symbol id="i-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9" /></symbol>
+        <symbol id="i-apple" viewBox="0 0 24 24" fill="currentColor"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z" /></symbol>
+      </defs>
+    </svg>
+
+    <!-- Navigation -->
+    <nav aria-label="Main navigation">
+      <div class="nav-container">
         <a href="#" class="logo">
-          <img src="Nook.png" alt="Nook" class="logo-img" />
+          <span class="logo-icon"><img src="Nook.png" alt="" class="glyph" /></span>
           <span class="logo-text">Nook</span>
         </a>
-        <nav class="nav-links">
+        <div class="nav-links">
+          <a href="#tabs">Tabs</a>
           <a href="#features">Features</a>
-          <a href="#download">Download</a>
-          <a href="https://github.com/waseemmaya/nook-updates">GitHub</a>
-        </nav>
-      </header>
-
-      <section class="hero">
-        <div class="badge">
-          <span class="badge-dot"></span>
-          Available for macOS
+          <a href="#setup">Setup</a>
+          <a href="#faq">FAQ</a>
+          <a href="#download" class="nav-cta">Download</a>
         </div>
-        <h1>Thoughts<br />Don't <em>Wait</em></h1>
-        <p>
-          Ideas show up at the worst times. In the middle of work. Before sleep.
-          Between meetings. This app exists for that exact moment — when you
-          just need to open and write. No setup. No distraction. No friction.
-          Just a blank space that listens as fast as you think.
-        </p>
-        <div class="cta-group">
-          <a
-            href="https://raw.githubusercontent.com/waseemmaya/nook-updates/main/Nook_aarch64.app.tar.gz"
-            class="btn btn-primary"
-          >
-            <svg
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="2"
-            >
-              <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
-              <polyline points="7 10 12 15 17 10" />
-              <line x1="12" y1="15" x2="12" y2="3" />
-            </svg>
-            Download for Mac
-          </a>
-          <a href="#features" class="btn btn-secondary"> See Features </a>
+        <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="Open menu" type="button">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <line x1="3" y1="6" x2="21" y2="6" />
+            <line x1="3" y1="12" x2="21" y2="12" />
+            <line x1="3" y1="18" x2="21" y2="18" />
+          </svg>
+        </button>
+      </div>
+    </nav>
+
+    <div class="mobile-menu-overlay" id="mobile-menu-overlay"></div>
+    <div class="mobile-menu" id="mobile-menu" aria-label="Menu">
+      <div class="mobile-menu-header">
+        <span class="logo">
+          <span class="logo-icon"><img src="Nook.png" alt="" class="glyph" /></span>
+          <span class="logo-text">Nook</span>
+        </span>
+        <button class="mobile-menu-close" id="mobile-menu-close" aria-label="Close menu" type="button">
+          <svg><use href="#i-x" /></svg>
+        </button>
+      </div>
+      <div class="mobile-menu-links">
+        <a href="#tabs">Tabs</a>
+        <a href="#features">Features</a>
+        <a href="#setup">Setup</a>
+        <a href="#faq">FAQ</a>
+        <a href="#download" class="nav-cta">Download</a>
+      </div>
+    </div>
+
+    <!-- Hero -->
+    <section class="hero" aria-label="Introduction">
+      <div class="hero-badge">
+        <span class="hero-badge-dot"></span>
+        <span class="mono" id="app-version">macOS</span>
+        <span>— Menu Bar App</span>
+      </div>
+
+      <h1>
+        Your whole workday<br />
+        in the <span class="highlight">menu bar</span>
+      </h1>
+
+      <p class="hero-subtitle">
+        Notes, your weekly work log, deploys, local ports, AI limits, Mac health
+        and clipboard history. Seven small tools in one window, one click away.
+      </p>
+
+      <div class="hero-cta-group">
+        <a href="#download" class="btn-primary">
+          <svg width="20" height="20"><use href="#i-download" /></svg>
+          Download for macOS
+        </a>
+        <a href="#tabs" class="btn-secondary">See what's inside</a>
+      </div>
+
+      <div class="tech-stack">
+        <span class="tech-badge"><svg><use href="#i-apple" /></svg>Apple Silicon &amp; Intel</span>
+        <span class="tech-badge">macOS 11+</span>
+        <span class="tech-badge">Built with Rust &amp; Tauri</span>
+        <span class="tech-badge">Free · No account</span>
+      </div>
+
+      <!-- Interactive mockup -->
+      <div class="preview">
+        <div class="mac-menubar" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 20h.01" /><path d="M2 8.82a15 15 0 0 1 20 0" /><path d="M5 12.859a10 10 0 0 1 14 0" /><path d="M8.5 16.429a5 5 0 0 1 7 0" /></svg>
+          <span class="tray-item" id="tray-item"><img src="Nook.png" alt="" class="glyph" /><span class="tray-dot" title="A build is running"></span></span>
+          <span class="mono">Tue 14:52</span>
         </div>
 
-        <div class="preview">
-          <div class="preview-window">
-            <div class="preview-tabs">
-              <div class="tab active">DRAFT</div>
-              <div class="tab">PERSONAL 🔒</div>
+        <div class="app-window-wrap">
+          <svg class="app-arrow" id="app-arrow" viewBox="0 0 22 10" aria-hidden="true">
+            <path d="M0 10 C5 10 7.5 1 11 1 C14.5 1 17 10 22 10 Z" fill="#1a1a1a" stroke="#2a2a2a" stroke-width="1" />
+            <rect x="0" y="9" width="22" height="2" fill="#1a1a1a" />
+          </svg>
+
+          <div class="app-window">
+            <div class="app-header">
+              <span class="app-icon-btn" title="Pin window open"><svg><use href="#i-pin" /></svg></span>
+              <div class="app-tabs" role="tablist" aria-label="Nook tabs">
+                <button class="app-tab active" role="tab" aria-selected="true" data-tab="note"><svg><use href="#i-note" /></svg><span>Note</span></button>
+                <button class="app-tab" role="tab" aria-selected="false" data-tab="deploys"><svg><use href="#i-rocket" /></svg><span>Deploys</span></button>
+                <button class="app-tab" role="tab" aria-selected="false" data-tab="ports"><svg><use href="#i-port" /></svg><span>Ports</span></button>
+                <button class="app-tab" role="tab" aria-selected="false" data-tab="work"><svg><use href="#i-checks" /></svg><span>Work</span></button>
+                <button class="app-tab" role="tab" aria-selected="false" data-tab="ai"><svg><use href="#i-sparkles" /></svg><span>AI</span></button>
+                <button class="app-tab" role="tab" aria-selected="false" data-tab="health"><svg><use href="#i-heart" /></svg><span>Health</span></button>
+                <button class="app-tab" role="tab" aria-selected="false" data-tab="clipboard"><svg><use href="#i-clipboard" /></svg><span>Clipboard</span></button>
+              </div>
+              <span class="app-icon-btn" title="Settings"><svg><use href="#i-gear" /></svg></span>
             </div>
-            <div class="preview-content">
-              <div class="typed-line">Quick meeting notes for Monday...</div>
-              <div class="typed-line"><br />— follow up with the team</div>
-              <div class="typed-line">— review the latest designs</div>
-              <div class="typed-line">— prepare presentation slides</div>
-              <div class="typed-line">
-                <br />Ideas for the weekend trip 🏕️<span class="cursor"></span>
+
+            <div class="app-body">
+              <!-- Note -->
+              <div class="panel active" data-panel="note" role="tabpanel">
+                <div class="note-area">
+                  Standup<br />
+                  <span class="muted">— shipped the tray highlight fix</span><br />
+                  <span class="muted">— pairing on checkout after lunch</span><br />
+                  <br />
+                  Ask design about the empty states<br />
+                  Try the new port for the API: 4000<span class="cursor"></span>
+                </div>
+                <div class="note-tools">
+                  <span style="font-weight: 800">AA</span>
+                  <span class="note-slider"></span>
+                  <span class="mono">15</span>
+                  <span>Sans</span>
+                  <span style="margin-left: auto">Saved</span>
+                </div>
+              </div>
+
+              <!-- Deploys -->
+              <div class="panel" data-panel="deploys" role="tabpanel">
+                <div class="m-toolbar">
+                  <span class="chip on">Vercel</span>
+                  <span class="chip">GitHub Actions</span>
+                  <span style="flex: 1"></span>
+                  <span class="chip on">All</span>
+                  <span class="chip">Building</span>
+                  <span class="chip">Error</span>
+                  <span class="chip">Canceled</span>
+                </div>
+                <div class="m-list">
+                  <div class="m-row">
+                    <span class="dot building"></span>
+                    <div class="m-grow">
+                      <div class="m-title">storefront</div>
+                      <div class="m-sub m-trunc">feat: faster checkout · <span class="mono">main</span></div>
+                    </div>
+                    <span class="m-sub" style="color: var(--accent-orange)">Building · 1m</span>
+                  </div>
+                  <div class="m-row">
+                    <span class="dot" style="background: var(--accent-teal)"></span>
+                    <div class="m-grow">
+                      <div class="m-title">marketing-site</div>
+                      <div class="m-sub m-trunc">copy: pricing page tweaks · <span class="mono">main</span></div>
+                    </div>
+                    <span class="m-sub">Ready · 12m</span>
+                  </div>
+                  <div class="m-row">
+                    <span class="dot" style="background: var(--accent-red)"></span>
+                    <div class="m-grow">
+                      <div class="m-title">dashboard</div>
+                      <div class="m-sub m-trunc">fix: date range picker · <span class="mono">feat/reports</span></div>
+                    </div>
+                    <span class="m-sub" style="color: var(--accent-red)">Error · 40m</span>
+                  </div>
+                  <div class="m-row">
+                    <span class="dot" style="background: var(--accent-teal)"></span>
+                    <div class="m-grow">
+                      <div class="m-title">docs</div>
+                      <div class="m-sub m-trunc">docs: new API examples · <span class="mono">main</span></div>
+                    </div>
+                    <span class="m-sub">Ready · 2h</span>
+                  </div>
+                  <div class="m-row">
+                    <span class="dot" style="background: #71717a"></span>
+                    <div class="m-grow">
+                      <div class="m-title">storefront</div>
+                      <div class="m-sub m-trunc">chore: bump deps · <span class="mono">renovate/all</span></div>
+                    </div>
+                    <span class="m-sub">Canceled · 3h</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Ports -->
+              <div class="panel" data-panel="ports" role="tabpanel">
+                <div class="m-toolbar">
+                  <span>4 listening ports</span>
+                  <span style="flex: 1"></span>
+                  <span>Refreshes every 10 s</span>
+                </div>
+                <div class="m-list">
+                  <div class="m-row">
+                    <div class="m-grow">
+                      <div class="m-title"><span class="mono" style="color: var(--accent)">:3000</span> &nbsp;node <span class="m-sub">· next dev</span></div>
+                      <div class="m-sub mono m-trunc">localhost:3000 · 192.168.1.24:3000</div>
+                    </div>
+                    <span class="m-icons"><svg><use href="#i-copy" /></svg><svg><use href="#i-open" /></svg><svg><use href="#i-x" /></svg></span>
+                  </div>
+                  <div class="m-row">
+                    <div class="m-grow">
+                      <div class="m-title"><span class="mono" style="color: var(--accent)">:4000</span> &nbsp;node <span class="m-sub">· api</span></div>
+                      <div class="m-sub mono m-trunc">localhost:4000 · 192.168.1.24:4000</div>
+                    </div>
+                    <span class="m-icons"><svg><use href="#i-copy" /></svg><svg><use href="#i-open" /></svg><svg><use href="#i-x" /></svg></span>
+                  </div>
+                  <div class="m-row">
+                    <div class="m-grow">
+                      <div class="m-title"><span class="mono" style="color: var(--accent)">:5432</span> &nbsp;postgres</div>
+                      <div class="m-sub mono m-trunc">localhost:5432</div>
+                    </div>
+                    <span class="m-icons"><svg><use href="#i-copy" /></svg><svg><use href="#i-open" /></svg><svg><use href="#i-x" /></svg></span>
+                  </div>
+                  <div class="m-row">
+                    <div class="m-grow">
+                      <div class="m-title"><span class="mono" style="color: var(--accent)">:6379</span> &nbsp;redis-server</div>
+                      <div class="m-sub mono m-trunc">localhost:6379</div>
+                    </div>
+                    <span class="m-icons"><svg><use href="#i-copy" /></svg><svg><use href="#i-open" /></svg><svg><use href="#i-x" /></svg></span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Work -->
+              <div class="panel" data-panel="work" role="tabpanel">
+                <div class="week-head">
+                  <span><b>This week</b> <span class="m-sub">· 14h 30m logged</span></span>
+                  <span class="copy-btn">Copy report</span>
+                </div>
+                <div class="m-list">
+                  <div class="day">Tue · Today</div>
+                  <div class="task">
+                    <span class="m-trunc">Checkout redesign <span class="link">PR #482</span></span>
+                    <span class="bar"><span style="width: 70%; background: var(--accent)"></span></span>
+                    <span class="m-sub mono">3h</span>
+                  </div>
+                  <div class="task">
+                    <span class="m-trunc">Fix flaky payment tests</span>
+                    <span class="bar"><span style="width: 100%; background: var(--accent-teal)"></span></span>
+                    <span class="m-sub mono">1h 30m</span>
+                  </div>
+                  <div class="day">Mon</div>
+                  <div class="task">
+                    <span class="m-trunc">Sprint planning + estimates</span>
+                    <span class="bar"><span style="width: 100%; background: var(--accent-teal)"></span></span>
+                    <span class="m-sub mono">2h</span>
+                  </div>
+                  <div class="task">
+                    <span class="m-trunc">Reports API <span class="link">JIRA-219</span></span>
+                    <span class="bar"><span style="width: 40%; background: var(--accent)"></span></span>
+                    <span class="m-sub mono">4h</span>
+                  </div>
+                </div>
+                <div class="reminder">
+                  <svg width="12" height="12"><use href="#i-bell" /></svg>
+                  Reminders <span class="chip">13:00</span><span class="chip">18:00</span><span>· weekdays</span>
+                </div>
+              </div>
+
+              <!-- AI -->
+              <div class="panel" data-panel="ai" role="tabpanel">
+                <div class="cards">
+                  <div class="card ai-card">
+                    <div class="card-label">Claude Code</div>
+                    <div class="ai-window">
+                      <div class="ai-window-row"><span>5-hour window</span><b>42% used</b></div>
+                      <div class="bar"><span style="width: 42%; background: #4ade80"></span></div>
+                      <div class="m-sub" style="margin-top: 3px">Resets in 2h 10m</div>
+                    </div>
+                    <div class="ai-window">
+                      <div class="ai-window-row"><span>Weekly</span><b>78% used</b></div>
+                      <div class="bar"><span style="width: 78%; background: #f5a524"></span></div>
+                      <div class="m-sub" style="margin-top: 3px">Resets Thu 09:00</div>
+                    </div>
+                  </div>
+                  <div class="card ai-card">
+                    <div class="card-label">Codex</div>
+                    <div class="ai-window">
+                      <div class="ai-window-row"><span>5-hour window</span><b>12% used</b></div>
+                      <div class="bar"><span style="width: 12%; background: #4ade80"></span></div>
+                      <div class="m-sub" style="margin-top: 3px">Resets in 4h 05m · Updated 1m ago</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Health -->
+              <div class="panel" data-panel="health" role="tabpanel">
+                <div class="cards">
+                  <div class="card">
+                    <div class="card-label">Battery</div>
+                    <div class="card-value">86%</div>
+                    <div class="m-sub">Health 94% · 212 cycles</div>
+                  </div>
+                  <div class="card">
+                    <div class="card-label">CPU</div>
+                    <div class="card-value">12%</div>
+                    <div class="bar"><span style="width: 12%; background: var(--accent-teal)"></span></div>
+                  </div>
+                  <div class="card">
+                    <div class="card-label">Memory</div>
+                    <div class="card-value">11.2 <span class="m-sub">/ 16 GB</span></div>
+                    <div class="m-sub">Memory pressure normal</div>
+                  </div>
+                  <div class="card">
+                    <div class="card-label">Disk</div>
+                    <div class="card-value">312 <span class="m-sub">GB free</span></div>
+                    <div class="bar"><span style="width: 66%; background: var(--accent)"></span></div>
+                  </div>
+                  <div class="card">
+                    <div class="card-label">Thermal</div>
+                    <div class="card-value" style="color: #4ade80">Nominal</div>
+                    <div class="m-sub">No throttling</div>
+                  </div>
+                  <div class="card">
+                    <div class="card-label">Swap</div>
+                    <div class="card-value">0.4 <span class="m-sub">GB used</span></div>
+                    <div class="bar"><span style="width: 10%; background: var(--accent-teal)"></span></div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Clipboard -->
+              <div class="panel" data-panel="clipboard" role="tabpanel">
+                <div class="search"><svg><use href="#i-search" /></svg>Search clipboard history</div>
+                <div class="m-list">
+                  <div class="m-section">Pinned · 2</div>
+                  <div class="m-row">
+                    <div class="m-grow m-trunc"><span class="tag">Test card</span> <span class="mono m-sub">4242 4242 4242 4242</span></div>
+                    <span class="m-icons"><svg style="color: var(--accent)"><use href="#i-pin" /></svg><svg><use href="#i-copy" /></svg></span>
+                  </div>
+                  <div class="m-row">
+                    <div class="m-grow m-trunc"><span class="tag">Staging</span> <span class="mono m-sub">https://staging.example.com</span></div>
+                    <span class="m-icons"><svg style="color: var(--accent)"><use href="#i-pin" /></svg><svg><use href="#i-copy" /></svg></span>
+                  </div>
+                  <div class="m-section">Recent</div>
+                  <div class="m-row">
+                    <span class="thumb"></span>
+                    <div class="m-grow">
+                      <div class="m-title">Image <span class="m-sub">1440×900</span></div>
+                      <div class="m-sub">Figma · 2m ago</div>
+                    </div>
+                    <span class="m-icons"><svg><use href="#i-open" /></svg><svg><use href="#i-copy" /></svg></span>
+                  </div>
+                  <div class="m-row">
+                    <div class="m-grow">
+                      <div class="mono m-trunc" style="color: #e5e7eb">git rebase -i origin/main</div>
+                      <div class="m-sub">Terminal · 5m ago</div>
+                    </div>
+                    <span class="m-icons"><svg><use href="#i-pin" /></svg><svg><use href="#i-copy" /></svg></span>
+                  </div>
+                </div>
               </div>
             </div>
-            <div class="preview-toolbar">
-              <span class="toolbar-icon">𝐓</span>
-              <span class="toolbar-icon">AA</span>
-              <span class="toolbar-icon">📌</span>
-              <span class="toolbar-icon">↻</span>
-              <span class="toolbar-icon">⚙️</span>
-            </div>
           </div>
         </div>
-      </section>
+        <p class="mockup-caption">Click a tab to look around. The dot next to the icon pulses while a build is running.</p>
+      </div>
+    </section>
 
-      <section class="features" id="features">
-        <div class="features-header">
-          <h2>Some Thoughts Are Public.<br />Some <em>Aren't.</em></h2>
-          <p>
-            Not everything is meant to be organized. And not everything is meant
-            to be shared.
-          </p>
+    <!-- Tabs -->
+    <section class="tabs-section" id="tabs" aria-labelledby="tabs-heading">
+      <div class="section-header">
+        <p class="section-label mono">Seven tabs</p>
+        <h2 class="section-title" id="tabs-heading">
+          Everything you reach for.<br />One click away.
+        </h2>
+        <p class="section-desc">
+          Show the tabs you use, hide the rest, and drag them into your own order.
+        </p>
+      </div>
+
+      <div class="features-grid">
+        <div class="feature-card">
+          <div class="feature-icon"><svg><use href="#i-note" /></svg></div>
+          <h3>Note</h3>
+          <p>A blank page for whatever just came to mind. Open it, type, close it.</p>
+          <ul>
+            <li>Saves as you type, nothing to lose</li>
+            <li>Pick the font, size and weight that feel right</li>
+            <li>Right where you left it, every time</li>
+          </ul>
         </div>
 
-        <div class="two-notes">
-          <p class="intro-text">That's why there are only two notes:</p>
-          <div class="notes-grid">
-            <div class="note-card draft">
-              <div class="note-label">Draft</div>
-              <p>Messy, temporary, always moving</p>
-            </div>
-            <div class="note-card personal">
-              <div class="note-label">Personal 🔒</div>
-              <p>Private, password-protected, yours alone</p>
-            </div>
+        <div class="feature-card">
+          <div class="feature-icon"><svg><use href="#i-checks" /></svg></div>
+          <h3>Work</h3>
+          <p>A daily log of what you worked on, ready for your weekly update.</p>
+          <ul>
+            <li>Tasks with a link, % done and time spent</li>
+            <li>Week view with totals; step back through past weeks</li>
+            <li>Copy the week as text for Slack or email</li>
+            <li>Reminders at as many times a day as you like</li>
+          </ul>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon"><svg><use href="#i-rocket" /></svg></div>
+          <h3>Deploys</h3>
+          <p>Vercel deployments and GitHub Actions runs, side by side.</p>
+          <ul>
+            <li>Notifications when a build starts, finishes or fails</li>
+            <li>Pulsing tray dot while anything is building</li>
+            <li>Filter by Ready, Building, Error or Canceled</li>
+            <li>Redeploy or re-run failed jobs in one click</li>
+            <li>Multiple accounts, tokens kept in the Keychain</li>
+          </ul>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon"><svg><use href="#i-port" /></svg></div>
+          <h3>Ports</h3>
+          <p>Every server listening on your Mac, and what started it.</p>
+          <ul>
+            <li>Local and network URLs, ready to copy or open</li>
+            <li>Test on your phone over Wi-Fi with the network URL</li>
+            <li>Copy the project path, or stop the process</li>
+            <li>Refreshes every 10 seconds while open</li>
+          </ul>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon"><svg><use href="#i-sparkles" /></svg></div>
+          <h3>AI</h3>
+          <p>How much of your Claude Code and Codex limits you've used.</p>
+          <ul>
+            <li>5-hour and weekly windows with reset times</li>
+            <li>Uses your existing CLI sign-in, read-only</li>
+            <li>Backs off politely if the provider rate-limits</li>
+          </ul>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon"><svg><use href="#i-heart" /></svg></div>
+          <h3>Health</h3>
+          <p>A quick check-up for your Mac, without opening three apps.</p>
+          <ul>
+            <li>Battery charge, health and cycle count</li>
+            <li>CPU, memory pressure and swap</li>
+            <li>Free disk space and thermal state</li>
+            <li>Power draw and the apps using the most energy</li>
+          </ul>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon"><svg><use href="#i-clipboard" /></svg></div>
+          <h3>Clipboard</h3>
+          <p>The last 300 things you copied, text and images.</p>
+          <ul>
+            <li>Search, then click any item to copy it again</li>
+            <li>Pin favourites and give them labels</li>
+            <li>Big preview when you hover an image</li>
+            <li>Compact view for a denser list</li>
+            <li>Handles huge copies, like a full JSON response</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Light on your Mac -->
+    <section class="band" id="features" aria-labelledby="features-heading">
+      <div class="section-header">
+        <p class="section-label mono">Built in</p>
+        <h2 class="section-title" id="features-heading">Feels native. Stays light.</h2>
+        <p class="section-desc">The small details that make it pleasant to leave running all day.</p>
+      </div>
+      <div class="band-grid">
+        <div class="band-item">
+          <span class="status-indicator" style="background: var(--accent)"></span>
+          <div>
+            <h4>A real menu bar popover</h4>
+            <p>Opens under its icon with an arrow and a highlighted icon, like the system's own menus.</p>
           </div>
-          <p class="outro-text">
-            Tag what matters, pin what's important, and shape the space with
-            fonts that feel like you. When you come back, everything is exactly
-            where you left it.
-          </p>
         </div>
+        <div class="band-item">
+          <span class="status-indicator" style="background: var(--accent-teal)"></span>
+          <div>
+            <h4>Pin it open</h4>
+            <p>Keep the window up while you work, or let it hide when you click away.</p>
+          </div>
+        </div>
+        <div class="band-item">
+          <span class="status-indicator" style="background: var(--accent-blue)"></span>
+          <div>
+            <h4>Your tabs, your order</h4>
+            <p>Hide the tabs you don't need and drag the rest into place.</p>
+          </div>
+        </div>
+        <div class="band-item">
+          <span class="status-indicator" style="background: var(--accent-yellow)"></span>
+          <div>
+            <h4>Easy on the battery</h4>
+            <p>Checks deploys less often when you're not looking, and stops while your screen is locked.</p>
+          </div>
+        </div>
+        <div class="band-item">
+          <span class="status-indicator" style="background: #a78bfa"></span>
+          <div>
+            <h4>Stays on your Mac</h4>
+            <p>Notes, work log and clipboard history live on your Mac. No account, no cloud.</p>
+          </div>
+        </div>
+        <div class="band-item">
+          <span class="status-indicator" style="background: var(--accent-red)"></span>
+          <div>
+            <h4>Updates itself</h4>
+            <p>New versions install in one click from the menu. It also starts when you log in.</p>
+          </div>
+        </div>
+      </div>
+    </section>
 
-        <div class="sync-section">
-          <h2>Your Words,<br />Wherever <em>You Are</em></h2>
-          <p class="sync-intro">
-            Life switches devices. Your notes shouldn't break.
-          </p>
-          <p class="sync-body">
-            Every word is saved quietly in the background, updated bit by bit.
-            Sync with Google Drive and iCloud, and your writing follows you —
-            across devices, days, and moods.
-          </p>
-          <div class="sync-quote">
+    <!-- Setup -->
+    <section class="how-it-works" id="setup" aria-labelledby="setup-heading">
+      <div class="section-header">
+        <p class="section-label mono">Setup</p>
+        <h2 class="section-title" id="setup-heading">Up and running in 2 minutes</h2>
+      </div>
+
+      <div class="steps-container">
+        <div class="step">
+          <div class="step-number mono">01</div>
+          <div class="step-content">
+            <h3>Install Nook</h3>
             <p>
-              Because thoughts fade.<br />But good tools make sure they don't
-              disappear.
+              Download the DMG for your Mac <a href="#download">below</a> and drag Nook to
+              Applications. Nook isn't notarized by Apple yet, so run this once in Terminal
+              before opening it:
+            </p>
+            <div class="step-code mono">
+              <span class="cmd">$</span> xattr -d com.apple.quarantine /Applications/Nook.app
+            </div>
+            <p class="step-note">If it fails, put <code>sudo</code> in front and try again.</p>
+          </div>
+        </div>
+
+        <div class="step">
+          <div class="step-number mono">02</div>
+          <div class="step-content">
+            <h3>Click the icon in your menu bar</h3>
+            <p>
+              Nook lives next to the clock. Click it to open, click away to hide. Right-click
+              (two-finger click) for updates and Quit.
             </p>
           </div>
         </div>
-      </section>
 
-      <section class="download" id="download">
-        <div class="download-box">
-          <h2>Start Writing</h2>
-          <p>Open it. Write. That's it.</p>
-          <div class="download-buttons">
-            <a
-              href="https://raw.githubusercontent.com/waseemmaya/nook-updates/main/Nook_aarch64.app.tar.gz"
-              class="btn btn-primary"
-            >
-              <svg
-                viewBox="0 0 24 24"
-                fill="currentColor"
-                width="18"
-                height="18"
-              >
-                <path
-                  d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"
-                />
-              </svg>
-              Apple Silicon
-            </a>
-            <a
-              href="https://raw.githubusercontent.com/waseemmaya/nook-updates/main/Nook_x64.app.tar.gz"
-              class="btn btn-secondary"
-            >
-              <svg
-                viewBox="0 0 24 24"
-                fill="currentColor"
-                width="18"
-                height="18"
-              >
-                <path
-                  d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"
-                />
-              </svg>
-              Intel Mac
-            </a>
+        <div class="step">
+          <div class="step-number mono">03</div>
+          <div class="step-content">
+            <h3>Connect deploys (optional)</h3>
+            <p>
+              Create a <a href="https://vercel.com/account/tokens" target="_blank" rel="noopener">Vercel token</a>
+              and a <a href="https://github.com/settings/tokens/new?scopes=repo,workflow" target="_blank" rel="noopener">GitHub token</a>
+              with <code>repo</code> and <code>workflow</code> scopes, then add them in the Deploys tab.
+              They're stored in your macOS Keychain.
+            </p>
           </div>
-          <p class="platform-badge">
-            macOS 11.0+ • Version 0.2.24 • Free forever
-          </p>
         </div>
-      </section>
 
-      <footer>
-        <p>
-          Made with care by
-          <a href="https://github.com/waseemmaya">@waseemmaya</a> •
-          <a href="privacy.html">Privacy Policy</a>
-        </p>
-      </footer>
-    </div>
+        <div class="step">
+          <div class="step-number mono">04</div>
+          <div class="step-content">
+            <h3>Make it yours</h3>
+            <p>
+              Open Settings to hide tabs, reorder them and turn on notifications. The AI tab
+              picks up Claude Code and Codex on its own if you're signed in to their CLIs.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="faq-section" id="faq" aria-labelledby="faq-heading">
+      <div class="section-header">
+        <p class="section-label mono">FAQ</p>
+        <h2 class="section-title" id="faq-heading">Frequently asked questions</h2>
+      </div>
+
+      <div class="faq-container">
+        <details class="faq-item">
+          <summary class="faq-question"><span>Is Nook free?</span><svg class="faq-icon" width="20" height="20"><use href="#i-chevron" /></svg></summary>
+          <div class="faq-answer"><p>Yes. No account, no trial, no subscription.</p></div>
+        </details>
+
+        <details class="faq-item">
+          <summary class="faq-question"><span>Which Macs are supported?</span><svg class="faq-icon" width="20" height="20"><use href="#i-chevron" /></svg></summary>
+          <div class="faq-answer"><p>macOS 11 (Big Sur) or later, on Apple Silicon and Intel. Pick the matching download below.</p></div>
+        </details>
+
+        <details class="faq-item">
+          <summary class="faq-question"><span>Where is my data stored?</span><svg class="faq-icon" width="20" height="20"><use href="#i-chevron" /></svg></summary>
+          <div class="faq-answer">
+            <p>On your Mac. Notes, the work log and clipboard history stay in Nook's local app data. Vercel and GitHub tokens go in the macOS Keychain.</p>
+            <p>Nook only talks to Vercel, GitHub and the Claude/Codex usage endpoints you've set up, plus its own update check.</p>
+          </div>
+        </details>
+
+        <details class="faq-item">
+          <summary class="faq-question"><span>What does the clipboard history save?</span><svg class="faq-icon" width="20" height="20"><use href="#i-chevron" /></svg></summary>
+          <div class="faq-answer">
+            <p>
+              The last 300 text and image copies, plus anything you pin. Copies that apps mark as temporary are skipped;
+              everything else is kept, so delete anything sensitive with the trash icon, or clear the history.
+            </p>
+          </div>
+        </details>
+
+        <details class="faq-item">
+          <summary class="faq-question"><span>Will it drain my battery?</span><svg class="faq-icon" width="20" height="20"><use href="#i-chevron" /></svg></summary>
+          <div class="faq-answer">
+            <p>
+              No. Deploys are checked every 15 seconds only while something is building, and every 2 minutes when the window is
+              closed. Everything pauses while your screen is locked or the display is asleep, and animations stop while the window is hidden.
+            </p>
+          </div>
+        </details>
+
+        <details class="faq-item">
+          <summary class="faq-question"><span>Why does macOS say Nook can't be opened?</span><svg class="faq-icon" width="20" height="20"><use href="#i-chevron" /></svg></summary>
+          <div class="faq-answer">
+            <p>Nook isn't notarized by Apple yet. Move it to Applications, then run:</p>
+            <div class="step-code mono"><span class="cmd">$</span> xattr -d com.apple.quarantine /Applications/Nook.app</div>
+          </div>
+        </details>
+
+        <details class="faq-item">
+          <summary class="faq-question"><span>How do updates work?</span><svg class="faq-icon" width="20" height="20"><use href="#i-chevron" /></svg></summary>
+          <div class="faq-answer">
+            <p>Nook checks for new versions on its own. When one is out, right-click the menu bar icon or open Settings and choose Install. It restarts in a few seconds.</p>
+          </div>
+        </details>
+      </div>
+    </section>
+
+    <!-- Download -->
+    <section class="cta-section" id="download" aria-labelledby="download-heading">
+      <h2 class="cta-title" id="download-heading">Your day, one click away</h2>
+      <p class="cta-desc">Install Nook and stop hunting for the same seven things across the dock, tabs and Terminal.</p>
+      <div class="download-buttons">
+        <a href="https://raw.githubusercontent.com/waseemmaya/nook-updates/main/Nook_aarch64.dmg" class="btn-primary">
+          <svg width="20" height="20"><use href="#i-apple" /></svg>
+          Download for Apple Silicon
+        </a>
+        <a href="https://raw.githubusercontent.com/waseemmaya/nook-updates/main/Nook_x64.dmg" class="btn-secondary">
+          <svg width="20" height="20"><use href="#i-apple" /></svg>
+          Download for Intel Mac
+        </a>
+      </div>
+      <p class="download-note">
+        <span id="download-version">macOS 11+</span> · Free
+        &nbsp;·&nbsp;
+        <a href="https://github.com/waseemmaya/nook-updates" target="_blank" rel="noopener">All releases</a>
+      </p>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="footer-content">
+        <div class="footer-left">
+          <img src="Nook.png" alt="" class="footer-logo glyph" />
+          <span class="footer-text">Built with ☕ by <a href="https://github.com/waseemmaya" target="_blank" rel="noopener">@waseemmaya</a></span>
+        </div>
+        <div class="footer-links">
+          <a href="https://github.com/waseemmaya/nook-updates" target="_blank" rel="noopener">Releases</a>
+          <a href="privacy.html">Privacy</a>
+          <a href="https://github.com/waseemmaya/nook-updates/issues" target="_blank" rel="noopener">Report Issue</a>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      // ---------- Mobile menu ----------
+      (function () {
+        const overlay = document.getElementById("mobile-menu-overlay");
+        const menu = document.getElementById("mobile-menu");
+        const open = () => {
+          overlay.classList.add("active");
+          menu.classList.add("active");
+          document.body.style.overflow = "hidden";
+        };
+        const close = () => {
+          overlay.classList.remove("active");
+          menu.classList.remove("active");
+          document.body.style.overflow = "";
+        };
+        document.getElementById("mobile-menu-btn").addEventListener("click", open);
+        document.getElementById("mobile-menu-close").addEventListener("click", close);
+        overlay.addEventListener("click", close);
+        menu.querySelectorAll("a").forEach((a) => a.addEventListener("click", close));
+        document.addEventListener("keydown", (e) => e.key === "Escape" && close());
+      })();
+
+      // ---------- Mockup tabs ----------
+      (function () {
+        const tabs = Array.from(document.querySelectorAll(".app-tab"));
+        const panels = Array.from(document.querySelectorAll(".panel"));
+        let index = 0;
+        let timer = null;
+
+        function show(i) {
+          index = i;
+          const name = tabs[i].dataset.tab;
+          tabs.forEach((t, j) => {
+            t.classList.toggle("active", j === i);
+            t.setAttribute("aria-selected", String(j === i));
+          });
+          panels.forEach((p) => p.classList.toggle("active", p.dataset.panel === name));
+          tabs[i].scrollIntoView({ block: "nearest", inline: "nearest" });
+        }
+
+        // Cycle through the tabs until the visitor clicks one.
+        const reduced = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+        if (!reduced) {
+          timer = setInterval(() => show((index + 1) % tabs.length), 3500);
+        }
+
+        tabs.forEach((tab, i) =>
+          tab.addEventListener("click", () => {
+            clearInterval(timer);
+            show(i);
+          })
+        );
+
+        // Arrow points at the tray icon, like the real popover.
+        const arrow = document.getElementById("app-arrow");
+        const tray = document.getElementById("tray-item");
+        const wrap = arrow.parentElement;
+        function placeArrow() {
+          const t = tray.getBoundingClientRect();
+          const w = wrap.getBoundingClientRect();
+          const x = t.left + t.width / 2 - w.left;
+          arrow.style.left = Math.min(Math.max(x, 22), w.width - 22) + "px";
+        }
+        placeArrow();
+        window.addEventListener("resize", placeArrow);
+        document.fonts && document.fonts.ready.then(placeArrow);
+      })();
+
+      // ---------- Latest version ----------
+      fetch("https://raw.githubusercontent.com/waseemmaya/nook-updates/main/latest.json")
+        .then((r) => r.json())
+        .then((data) => {
+          if (!data.version) return;
+          document.getElementById("app-version").textContent = "v" + data.version;
+          document.getElementById("download-version").textContent = "v" + data.version + " · macOS 11+";
+        })
+        .catch(() => {});
+    </script>
   </body>
 </html>
