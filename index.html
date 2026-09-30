@@ -673,6 +673,7 @@
       }
 
       .app-tabs {
+        position: relative; /* offset parent for the tab scroll math */
         flex: 1;
         min-width: 0;
         display: flex;
@@ -2356,32 +2357,24 @@
       (function () {
         const tabs = Array.from(document.querySelectorAll(".app-tab"));
         const panels = Array.from(document.querySelectorAll(".panel"));
-        let index = 0;
-        let timer = null;
+        const strip = document.querySelector(".app-tabs");
 
         function show(i) {
-          index = i;
           const name = tabs[i].dataset.tab;
           tabs.forEach((t, j) => {
             t.classList.toggle("active", j === i);
             t.setAttribute("aria-selected", String(j === i));
           });
           panels.forEach((p) => p.classList.toggle("active", p.dataset.panel === name));
-          tabs[i].scrollIntoView({ block: "nearest", inline: "nearest" });
+          // Keep the chosen tab visible in the (narrow-screen) tab strip,
+          // without scrolling the page itself.
+          const t = tabs[i];
+          if (t.offsetLeft < strip.scrollLeft || t.offsetLeft + t.offsetWidth > strip.scrollLeft + strip.clientWidth) {
+            strip.scrollLeft = t.offsetLeft - (strip.clientWidth - t.offsetWidth) / 2;
+          }
         }
 
-        // Cycle through the tabs until the visitor clicks one.
-        const reduced = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-        if (!reduced) {
-          timer = setInterval(() => show((index + 1) % tabs.length), 3500);
-        }
-
-        tabs.forEach((tab, i) =>
-          tab.addEventListener("click", () => {
-            clearInterval(timer);
-            show(i);
-          })
-        );
+        tabs.forEach((tab, i) => tab.addEventListener("click", () => show(i)));
 
         // Arrow points at the tray icon, like the real popover.
         const arrow = document.getElementById("app-arrow");
