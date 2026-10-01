@@ -141,6 +141,14 @@
             color: var(--text-secondary);
             font-size: 14px;
         }
+        code {
+            font-family: ui-monospace, Menlo, monospace;
+            font-size: 0.85em;
+            padding: 0.1em 0.35em;
+            border-radius: 4px;
+            background: rgba(127, 127, 127, 0.15);
+            overflow-wrap: anywhere;
+        }
     </style>
 </head>
 <body>
@@ -154,47 +162,49 @@
 
         <main>
             <h1>Privacy Policy</h1>
-            <p class="last-updated">Last updated: December 2024</p>
+            <p class="last-updated">Last updated: October 2026</p>
 
             <div class="highlight-box">
-                <p><strong>The short version:</strong> Nook doesn't collect any data. Your notes stay on your device. We don't track you, we don't have analytics, and we don't store anything on servers.</p>
+                <p><strong>The short version:</strong> Nook has no account, no analytics and no servers of its own. Everything it keeps stays on your computer. It only talks to the services you connect it to, plus GitHub to check for updates.</p>
             </div>
 
-            <h2>What We Collect</h2>
-            <p>Nothing. Zero. Nada.</p>
-            <p>Nook is designed with privacy at its core. The app runs entirely on your local machine, and we have no access to:</p>
+            <h2>What we collect</h2>
+            <p>Nothing. The app sends no analytics, usage data or crash reports, and we have no way to see your notes, work log, clipboard, screenshots or settings.</p>
+
+            <h2>What stays on your computer</h2>
             <ul>
-                <li>Your notes or any text you write</li>
-                <li>Your personal information</li>
-                <li>Your usage patterns or behavior</li>
-                <li>Your device information</li>
-                <li>Crash reports or diagnostics</li>
+                <li><strong>Notes, work log and settings</strong> - in Nook's app data folder.</li>
+                <li><strong>Clipboard history</strong> - the last 300 text and image copies plus anything you pin, in the same folder. Copies that apps mark as temporary are skipped; everything else (including passwords you copy) is kept until you delete it or clear the history.</li>
+                <li><strong>Screenshots</strong> - kept in Nook's cache folder for a day unless you save them. Text recognition runs on your computer (Apple's Vision on macOS, Tesseract on Linux); nothing is uploaded.</li>
+                <li><strong>Vercel and GitHub tokens</strong> - in the macOS Keychain, or your system keyring on Linux.</li>
             </ul>
+            <p>The app data folder is <code>~/Library/Application Support/com.waseemdilsher.nook</code> on macOS and <code>~/.local/share/com.waseemdilsher.nook</code> on Linux. Deleting Nook doesn't remove it - delete that folder too to remove everything.</p>
 
-            <h2>Data Storage</h2>
-            <p>All your notes and app preferences are stored locally on your Mac. We don't sync to any cloud services, and we don't have any servers that store your data.</p>
-            <p>If you uninstall Nook, your local data is removed with the app.</p>
-
-            <h2>Third-Party Services</h2>
-            <p>Nook doesn't integrate with any third-party analytics, advertising, or tracking services. We don't share data with anyone because we don't have any data to share.</p>
-
-            <h2>Updates</h2>
-            <p>Nook checks for updates through GitHub to let you know when a new version is available. This is the only network request the app makes, and it doesn't transmit any personal information.</p>
-
-            <h2>Your Control</h2>
-            <p>Since all data is stored locally on your device, you have complete control over it. You can:</p>
+            <h2>Network connections</h2>
+            <p>Nook connects only to:</p>
             <ul>
-                <li>Delete your notes at any time</li>
-                <li>Uninstall the app to remove all data</li>
-                <li>Use the app completely offline</li>
+                <li><strong>GitHub</strong> (<code>raw.githubusercontent.com</code>, <code>github.com</code>) - to check for and download updates. No personal information is sent.</li>
+                <li><strong>Vercel</strong> (<code>api.vercel.com</code>) and <strong>GitHub</strong> (<code>api.github.com</code>) - only if you add tokens in the Deploys tab, to show your deployments and workflow runs.</li>
+                <li><strong>Anthropic</strong> (<code>api.anthropic.com</code>) and <strong>OpenAI</strong> (<code>chatgpt.com</code>) - only if you're signed in to Claude Code or Codex on this computer, to read your usage limits for the AI tab. Nook uses the sign-in those tools already have, read-only.</li>
+                <li><strong>Google Fonts</strong> (<code>fonts.googleapis.com</code>) - to load the app's font.</li>
+            </ul>
+            <p>Your notes, work log, clipboard history and screenshots are never sent anywhere.</p>
+
+            <h2>Permissions</h2>
+            <p>On macOS, screenshots need Screen Recording permission, which macOS asks for the first time. Notifications are optional. You can change both in System Settings.</p>
+
+            <h2>This website</h2>
+            <p>This website uses <a href="https://umami.is" target="_blank" rel="noopener">Umami</a> to count page visits. It doesn't use cookies or collect personal information. The app itself has no analytics.</p>
+
+            <h2>Your control</h2>
+            <ul>
+                <li>Delete notes, clipboard items and work log entries at any time, or clear the clipboard history.</li>
+                <li>Remove a Vercel or GitHub account in the Deploys tab to delete its token.</li>
+                <li>Use Nook offline - everything except deploys, AI limits and updates works without a connection.</li>
             </ul>
 
             <h2>Contact</h2>
-            <p>If you have any questions about this privacy policy, feel free to reach out on <a href="https://github.com/waseemmaya/nook-updates">GitHub</a>.</p>
-
-            <div class="highlight-box">
-                <p>We believe privacy is a fundamental right, not a feature. Nook will always be built with this principle in mind.</p>
-            </div>
+            <p>Questions about this policy? Reach out on <a href="https://github.com/waseemmaya/nook-updates/issues">GitHub</a>.</p>
         </main>
 
         <footer>
