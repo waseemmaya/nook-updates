@@ -5,14 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <!-- Primary Meta Tags -->
-    <title>Nook — Your Workday in the Menu Bar | macOS Menu Bar App</title>
+    <title>Nook — Your Workday in the Menu Bar | macOS &amp; Linux</title>
     <meta
       name="title"
       content="Nook — Your Workday in the Menu Bar | macOS Menu Bar App"
     />
     <meta
       name="description"
-      content="Nook is a free macOS menu bar app for developers: quick notes, a weekly work log, Vercel and GitHub Actions deploys, local ports, AI usage limits, Mac health and clipboard history — one click away."
+      content="Nook is a free menu bar app for developers on macOS and Linux: quick notes, a weekly work log, Vercel and GitHub Actions deploys, local ports, AI usage limits, system health, clipboard history and screenshots with text recognition — one click away."
     />
     <meta
       name="keywords"
@@ -32,7 +32,7 @@
     <meta property="og:title" content="Nook — Your Workday in the Menu Bar" />
     <meta
       property="og:description"
-      content="Notes, work log, deploys, ports, AI limits, Mac health and clipboard history in one macOS menu bar app."
+      content="Notes, work log, deploys, ports, AI limits, system health, clipboard history and screenshots in one menu bar app for macOS and Linux."
     />
     <meta
       property="og:image"
@@ -46,7 +46,7 @@
     <meta name="twitter:title" content="Nook — Your Workday in the Menu Bar" />
     <meta
       name="twitter:description"
-      content="Notes, work log, deploys, ports, AI limits, Mac health and clipboard history in one macOS menu bar app. Free."
+      content="Notes, work log, deploys, ports, AI limits, system health, clipboard history and screenshots in one menu bar app for macOS and Linux. Free."
     />
     <meta
       name="twitter:image"
@@ -68,7 +68,7 @@
         "@type": "SoftwareApplication",
         "name": "Nook",
         "applicationCategory": "DeveloperApplication",
-        "operatingSystem": "macOS",
+        "operatingSystem": "macOS, Linux",
         "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
         "description": "A macOS menu bar app for developers: quick notes, a weekly work log, Vercel and GitHub Actions deploys, local ports, AI usage limits, Mac health and clipboard history.",
         "screenshot": "https://waseemmaya.github.io/nook-updates/Nook.png",
@@ -85,7 +85,11 @@
           "Listening ports with local and network URLs",
           "Claude Code and Codex usage limits",
           "Battery, CPU, memory, swap, disk and thermal health",
-          "Clipboard history for text and images, with pins and labels"
+          "Clipboard history for text and images, with pins and labels",
+          "Screenshots of an area or the screen, with a 3-second delay option",
+          "Read text from any part of the screen (on-device)",
+          "Pen tool to draw on screenshots and copied images",
+          "Floating button and vertical tabs"
         ]
       }
     </script>
@@ -1650,6 +1654,10 @@
         <symbol id="i-heart" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z" /><path d="M3.22 12H9.5l.5-1 2 4.5 2-7 1.5 3.5h5.27" /></symbol>
         <symbol id="i-clipboard" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="8" height="4" x="8" y="2" rx="1" ry="1" /><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2" /><path d="M12 11h4" /><path d="M12 16h4" /><path d="M8 11h.01" /><path d="M8 16h.01" /></symbol>
         <symbol id="i-pin" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 17v5" /><path d="M9 10.76a2 2 0 0 1-1.11 1.79l-1.78.9A2 2 0 0 0 5 15.24V16a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-.76a2 2 0 0 0-1.11-1.79l-1.78-.9A2 2 0 0 1 15 10.76V7a1 1 0 0 1 1-1 2 2 0 0 0 0-4H8a2 2 0 0 0 0 4 1 1 0 0 1 1 1z" /></symbol>
+        <symbol id="i-camera" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.5 4h-5L7 7H4a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2h-3l-2.5-3z" /><circle cx="12" cy="13" r="3" /></symbol>
+        <symbol id="i-crop" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2v14a2 2 0 0 0 2 2h14" /><path d="M18 22V8a2 2 0 0 0-2-2H2" /></symbol>
+        <symbol id="i-scan-text" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 7V5a2 2 0 0 1 2-2h2" /><path d="M17 3h2a2 2 0 0 1 2 2v2" /><path d="M21 17v2a2 2 0 0 1-2 2h-2" /><path d="M7 21H5a2 2 0 0 1-2-2v-2" /><path d="M7 8h8" /><path d="M7 12h10" /><path d="M7 16h6" /></symbol>
+        <symbol id="i-pencil" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21.174 6.812a1 1 0 0 0-3.986-3.987L3.842 16.174a2 2 0 0 0-.5.83l-1.321 4.352a.5.5 0 0 0 .623.622l4.353-1.32a2 2 0 0 0 .83-.497z" /><path d="m15 5 4 4" /></symbol>
         <symbol id="i-gear" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12.22 2h-.44a2 2 0 0 0-2 2v.18a2 2 0 0 1-1 1.73l-.43.25a2 2 0 0 1-2 0l-.15-.08a2 2 0 0 0-2.73.73l-.22.38a2 2 0 0 0 .73 2.73l.15.1a2 2 0 0 1 1 1.72v.51a2 2 0 0 1-1 1.74l-.15.09a2 2 0 0 0-.73 2.73l.22.38a2 2 0 0 0 2.73.73l.15-.08a2 2 0 0 1 2 0l.43.25a2 2 0 0 1 1 1.73V20a2 2 0 0 0 2 2h.44a2 2 0 0 0 2-2v-.18a2 2 0 0 1 1-1.73l.43-.25a2 2 0 0 1 2 0l.15.08a2 2 0 0 0 2.73-.73l.22-.39a2 2 0 0 0-.73-2.73l-.15-.08a2 2 0 0 1-1-1.74v-.5a2 2 0 0 1 1-1.74l.15-.09a2 2 0 0 0 .73-2.73l-.22-.38a2 2 0 0 0-2.73-.73l-.15.08a2 2 0 0 1-2 0l-.43-.25a2 2 0 0 1-1-1.73V4a2 2 0 0 0-2-2z" /><circle cx="12" cy="12" r="3" /></symbol>
         <symbol id="i-copy" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="14" height="14" x="8" y="8" rx="2" ry="2" /><path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2" /></symbol>
         <symbol id="i-open" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 3h6v6" /><path d="M10 14 21 3" /><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" /></symbol>
@@ -1658,6 +1666,7 @@
         <symbol id="i-bell" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10.268 21a2 2 0 0 0 3.464 0" /><path d="M3.262 15.326A1 1 0 0 0 4 17h16a1 1 0 0 0 .74-1.673C19.41 13.956 18 12.499 18 8A6 6 0 0 0 6 8c0 4.499-1.411 5.956-2.738 7.326" /></symbol>
         <symbol id="i-download" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" /><polyline points="7 10 12 15 17 10" /><line x1="12" y1="15" x2="12" y2="3" /></symbol>
         <symbol id="i-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9" /></symbol>
+        <symbol id="i-linux" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m7 11 2-2-2-2" /><path d="M11 13h4" /><rect width="18" height="18" x="3" y="3" rx="2" ry="2" /></symbol>
         <symbol id="i-apple" viewBox="0 0 24 24" fill="currentColor"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z" /></symbol>
       </defs>
     </svg>
@@ -1671,6 +1680,7 @@
         </a>
         <div class="nav-links">
           <a href="#tabs">Tabs</a>
+          <a href="#screenshots">Screenshots</a>
           <a href="#features">Features</a>
           <a href="#setup">Setup</a>
           <a href="#faq">FAQ</a>
@@ -1699,7 +1709,8 @@
       </div>
       <div class="mobile-menu-links">
         <a href="#tabs">Tabs</a>
-        <a href="#features">Features</a>
+        <a href="#screenshots">Screenshots</a>
+          <a href="#features">Features</a>
         <a href="#setup">Setup</a>
         <a href="#faq">FAQ</a>
         <a href="#download" class="nav-cta">Download</a>
@@ -1720,14 +1731,14 @@
       </h1>
 
       <p class="hero-subtitle">
-        Notes, your weekly work log, deploys, local ports, AI limits, Mac health
-        and clipboard history. Seven small tools in one window, one click away.
+        Notes, your weekly work log, deploys, local ports, AI limits, system health,
+        clipboard history and screenshots. Small tools in one window, one click away.
       </p>
 
       <div class="hero-cta-group">
         <a href="#download" class="btn-primary">
           <svg width="20" height="20"><use href="#i-download" /></svg>
-          Download for macOS
+          Download for macOS &amp; Linux
         </a>
         <a href="#tabs" class="btn-secondary">See what's inside</a>
       </div>
@@ -1735,6 +1746,7 @@
       <div class="tech-stack">
         <span class="tech-badge"><svg><use href="#i-apple" /></svg>Apple Silicon &amp; Intel</span>
         <span class="tech-badge">macOS 11+</span>
+        <span class="tech-badge"><svg><use href="#i-linux" /></svg>Linux · AppImage &amp; .deb</span>
         <span class="tech-badge">Built with Rust &amp; Tauri</span>
         <span class="tech-badge">Free · No account</span>
       </div>
@@ -1756,6 +1768,7 @@
           <div class="app-window">
             <div class="app-header">
               <span class="app-icon-btn" title="Pin window open"><svg><use href="#i-pin" /></svg></span>
+              <span class="app-icon-btn" title="Screenshot"><svg><use href="#i-camera" /></svg></span>
               <div class="app-tabs" role="tablist" aria-label="Nook tabs">
                 <button class="app-tab active" role="tab" aria-selected="true" data-tab="note"><svg><use href="#i-note" /></svg><span>Note</span></button>
                 <button class="app-tab" role="tab" aria-selected="false" data-tab="deploys"><svg><use href="#i-rocket" /></svg><span>Deploys</span></button>
@@ -2110,12 +2123,59 @@
           <ul>
             <li>Search, then click any item to copy it again</li>
             <li>Pin favourites and give them labels</li>
-            <li>Big preview when you hover an image</li>
-            <li>Compact view for a denser list</li>
+            <li>Draw on any copied image with the pen (saves a copy)</li>
+            <li>Compact view, with a big preview when you hover an image</li>
             <li>Handles huge copies, like a full JSON response</li>
           </ul>
         </div>
       </div>
+    </section>
+
+    <!-- Screenshots -->
+    <section class="tabs-section" id="screenshots" aria-labelledby="screenshots-heading">
+      <div class="section-header">
+        <p class="section-label mono">Screenshots</p>
+        <h2 class="section-title" id="screenshots-heading">Capture it. Read it.<br />Mark it up.</h2>
+        <p class="section-desc">
+          The camera button beside the pin. Every shot is copied straight away, so it's ready to paste.
+        </p>
+      </div>
+
+      <div class="features-grid">
+        <div class="feature-card">
+          <div class="feature-icon"><svg><use href="#i-crop" /></svg></div>
+          <h3>Capture</h3>
+          <p>An area or the whole screen, with the crosshair you know from ⌘⇧4.</p>
+          <ul>
+            <li>Capture area or capture screen</li>
+            <li>Delayed area: select it, it's captured 3 seconds later - time to open that menu</li>
+            <li>Delayed screen: the whole screen after 3 seconds</li>
+            <li>A preview pops up in the middle of the screen: copy, save to Desktop or open</li>
+          </ul>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon"><svg><use href="#i-scan-text" /></svg></div>
+          <h3>Read text</h3>
+          <p>Select any part of the screen and get its text - from images, videos, PDFs or apps that won't let you copy.</p>
+          <ul>
+            <li>Recognised on your Mac, nothing is uploaded</li>
+            <li>The text is copied for you, and shown to check</li>
+          </ul>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon"><svg><use href="#i-pencil" /></svg></div>
+          <h3>Mark it up</h3>
+          <p>A simple pen to circle the bug or underline the number before you send it.</p>
+          <ul>
+            <li>Seven colours, three sizes, undo</li>
+            <li>Works on screenshots and on images in your clipboard history</li>
+            <li>Done saves and copies the marked-up image</li>
+          </ul>
+        </div>
+      </div>
+      <p class="mockup-caption" style="margin-top: 2rem">Screenshots and text recognition are on macOS for now.</p>
     </section>
 
     <!-- Light on your Mac -->
@@ -2130,21 +2190,21 @@
           <span class="status-indicator" style="background: var(--accent)"></span>
           <div>
             <h4>A real menu bar popover</h4>
-            <p>Opens under its icon with an arrow and a highlighted icon, like the system's own menus.</p>
+            <p>Opens under its icon with an arrow, like the system's own menus. Pin it to keep it open while you work.</p>
           </div>
         </div>
         <div class="band-item">
           <span class="status-indicator" style="background: var(--accent-teal)"></span>
           <div>
-            <h4>Pin it open</h4>
-            <p>Keep the window up while you work, or let it hide when you click away.</p>
+            <h4>Floating button</h4>
+            <p>Optional: a small button that floats above every window. Drag it anywhere, click it to open Nook right there.</p>
           </div>
         </div>
         <div class="band-item">
           <span class="status-indicator" style="background: var(--accent-blue)"></span>
           <div>
-            <h4>Your tabs, your order</h4>
-            <p>Hide the tabs you don't need and drag the rest into place.</p>
+            <h4>Your tabs, your way</h4>
+            <p>Hide the tabs you don't need, drag the rest into order, or move them to a sidebar with vertical tabs.</p>
           </div>
         </div>
         <div class="band-item">
@@ -2157,8 +2217,8 @@
         <div class="band-item">
           <span class="status-indicator" style="background: #a78bfa"></span>
           <div>
-            <h4>Stays on your Mac</h4>
-            <p>Notes, work log and clipboard history live on your Mac. No account, no cloud.</p>
+            <h4>Stays on your computer</h4>
+            <p>Notes, work log, clipboard history and screenshots stay on your machine. No account, no cloud.</p>
           </div>
         </div>
         <div class="band-item">
@@ -2184,14 +2244,22 @@
           <div class="step-content">
             <h3>Install Nook</h3>
             <p>
-              Download the DMG for your Mac <a href="#download">below</a> and drag Nook to
-              Applications. Nook isn't notarized by Apple yet, so run this once in Terminal
+              <strong>macOS:</strong> download the DMG for your Mac <a href="#download">below</a> and drag
+              Nook to Applications. Nook isn't notarized by Apple yet, so run this once in Terminal
               before opening it:
             </p>
             <div class="step-code mono">
               <span class="cmd">$</span> xattr -d com.apple.quarantine /Applications/Nook.app
             </div>
             <p class="step-note">If it fails, put <code>sudo</code> in front and try again.</p>
+            <p style="margin-top: 1.5rem">
+              <strong>Linux:</strong> the AppImage runs on most distros and updates itself; the .deb
+              installs on Ubuntu and Debian.
+            </p>
+            <div class="step-code mono">
+              <span class="cmd">$</span> chmod +x Nook_amd64.AppImage &amp;&amp; ./Nook_amd64.AppImage<br />
+              <span class="cmd">$</span> sudo apt install ./Nook_amd64.deb
+            </div>
           </div>
         </div>
 
@@ -2202,6 +2270,11 @@
             <p>
               Nook lives next to the clock. Click it to open, click away to hide. Right-click
               (two-finger click) for updates and Quit.
+            </p>
+            <p class="step-note">
+              On Linux, click the tray icon and choose <em>Open Nook</em> - or turn on the floating
+              button in Settings to open it with one click. Vanilla GNOME (e.g. Fedora) needs the
+              AppIndicator extension to show tray icons; Ubuntu and KDE have it built in.
             </p>
           </div>
         </div>
@@ -2214,7 +2287,7 @@
               Create a <a href="https://vercel.com/account/tokens" target="_blank" rel="noopener">Vercel token</a>
               and a <a href="https://github.com/settings/tokens/new?scopes=repo,workflow" target="_blank" rel="noopener">GitHub token</a>
               with <code>repo</code> and <code>workflow</code> scopes, then add them in the Deploys tab.
-              They're stored in your macOS Keychain.
+              They're stored in your macOS Keychain, or your keyring on Linux.
             </p>
           </div>
         </div>
@@ -2224,8 +2297,9 @@
           <div class="step-content">
             <h3>Make it yours</h3>
             <p>
-              Open Settings to hide tabs, reorder them and turn on notifications. The AI tab
-              picks up Claude Code and Codex on its own if you're signed in to their CLIs.
+              Open Settings to hide or reorder tabs, switch to vertical tabs, turn on the floating
+              button and notifications. The AI tab picks up Claude Code and Codex on its own if
+              you're signed in to their CLIs. The first screenshot asks for Screen Recording permission.
             </p>
           </div>
         </div>
@@ -2246,14 +2320,18 @@
         </details>
 
         <details class="faq-item">
-          <summary class="faq-question"><span>Which Macs are supported?</span><svg class="faq-icon" width="20" height="20"><use href="#i-chevron" /></svg></summary>
-          <div class="faq-answer"><p>macOS 11 (Big Sur) or later, on Apple Silicon and Intel. Pick the matching download below.</p></div>
+          <summary class="faq-question"><span>Which systems are supported?</span><svg class="faq-icon" width="20" height="20"><use href="#i-chevron" /></svg></summary>
+          <div class="faq-answer">
+            <p>macOS 11 (Big Sur) or later, on Apple Silicon and Intel.</p>
+            <p>Linux on x86_64 with a system tray: Ubuntu 22.04 or newer, Debian 12, Fedora, and similar distros, on GNOME or KDE, X11 or Wayland.</p>
+          </div>
         </details>
 
         <details class="faq-item">
           <summary class="faq-question"><span>Where is my data stored?</span><svg class="faq-icon" width="20" height="20"><use href="#i-chevron" /></svg></summary>
           <div class="faq-answer">
-            <p>On your Mac. Notes, the work log and clipboard history stay in Nook's local app data. Vercel and GitHub tokens go in the macOS Keychain.</p>
+            <p>On your computer. Notes, the work log and clipboard history stay in Nook's local app data. Vercel and GitHub tokens go in the macOS Keychain, or the system keyring on Linux.</p>
+            <p>Screenshots are kept in Nook's cache for a day unless you save them, and text recognition runs on your Mac - nothing is uploaded.</p>
             <p>Nook only talks to Vercel, GitHub and the Claude/Codex usage endpoints you've set up, plus its own update check.</p>
           </div>
         </details>
@@ -2273,7 +2351,7 @@
           <div class="faq-answer">
             <p>
               No. Deploys are checked every 15 seconds only while something is building, and every 2 minutes when the window is
-              closed. Everything pauses while your screen is locked or the display is asleep, and animations stop while the window is hidden.
+              closed. Animations stop while the window is hidden, and on macOS everything pauses while your screen is locked or the display is asleep.
             </p>
           </div>
         </details>
@@ -2290,6 +2368,7 @@
           <summary class="faq-question"><span>How do updates work?</span><svg class="faq-icon" width="20" height="20"><use href="#i-chevron" /></svg></summary>
           <div class="faq-answer">
             <p>Nook checks for new versions on its own. When one is out, right-click the menu bar icon or open Settings and choose Install. It restarts in a few seconds.</p>
+            <p>On Linux the AppImage updates the same way. The .deb doesn't: install the new .deb from this page when an update is out.</p>
           </div>
         </details>
       </div>
@@ -2298,7 +2377,7 @@
     <!-- Download -->
     <section class="cta-section" id="download" aria-labelledby="download-heading">
       <h2 class="cta-title" id="download-heading">Your day, one click away</h2>
-      <p class="cta-desc">Install Nook and stop hunting for the same seven things across the dock, tabs and Terminal.</p>
+      <p class="cta-desc">Install Nook and stop hunting for the same handful of tools across the dock, tabs and Terminal.</p>
       <div class="download-buttons">
         <a href="https://raw.githubusercontent.com/waseemmaya/nook-updates/main/Nook_aarch64.dmg" class="btn-primary">
           <svg width="20" height="20"><use href="#i-apple" /></svg>
@@ -2309,8 +2388,18 @@
           Download for Intel Mac
         </a>
       </div>
+      <div class="download-buttons">
+        <a href="https://raw.githubusercontent.com/waseemmaya/nook-updates/main/Nook_amd64.AppImage" class="btn-secondary">
+          <svg width="20" height="20"><use href="#i-linux" /></svg>
+          Linux AppImage
+        </a>
+        <a href="https://raw.githubusercontent.com/waseemmaya/nook-updates/main/Nook_amd64.deb" class="btn-secondary">
+          <svg width="20" height="20"><use href="#i-linux" /></svg>
+          Linux .deb (Ubuntu / Debian)
+        </a>
+      </div>
       <p class="download-note">
-        <span id="download-version">macOS 11+</span> · Free
+        <span id="download-version">macOS 11+ · Linux x86_64</span> · Free
         &nbsp;·&nbsp;
         <a href="https://github.com/waseemmaya/nook-updates" target="_blank" rel="noopener">All releases</a>
       </p>
@@ -2397,7 +2486,7 @@
         .then((data) => {
           if (!data.version) return;
           document.getElementById("app-version").textContent = "v" + data.version;
-          document.getElementById("download-version").textContent = "v" + data.version + " · macOS 11+";
+          document.getElementById("download-version").textContent = "v" + data.version + " · macOS 11+ · Linux x86_64";
         })
         .catch(() => {});
     </script>
