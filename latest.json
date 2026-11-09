@@ -1,19 +1,19 @@
 {
-  "version": "0.13.1",
+  "version": "0.13.2",
   "notes": "See the assets to download this version and install.",
-  "pub_date": "2026-10-15T09:41:45Z",
+  "pub_date": "2026-11-09T11:08:06Z",
   "platforms": {
     "darwin-aarch64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSUTlkSGZiWDFFaXNxMWxPU0VVNDg4d2RWVjF6VzFsaWdqYm9nYnI4Q1ptVW9MNG1CcXY2QjVYS2ZhdEN2RzQ3VjVia2EraGk1cS9GYUl4ZnFPa0pLRzB3N1lZK3I3d1E4PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkyMDU3MDIwCWZpbGU6Tm9vay5hcHAudGFyLmd6CnRvS0g3cEZ5TGFPejNmNUgrZ0dpZHdlWDdwbjRYSHM0dDZpNzA1TmJvT2dvNmRPcHVLYnJZdWpxVG5EdUZQSnBqYUlBbmxlK2tKbmt4SnN0bWRIWUFRPT0K",
-      "url": "https://github.com/waseemmaya/nook-updates/releases/download/v0.13.1/Nook_aarch64.app.tar.gz"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSUTlkSGZiWDFFaXFidHlxWHFsT2NUcjZnMGdoN2tNYzVQd240MjVpUzFwSUxLSVNZeUVZV1ErbStMNkI2M1FTU0JTZmN1N21SZjlGNCsrcU1KYVJ5QmJsR01TMER5aEFzPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk0MjIyMDIwCWZpbGU6Tm9vay5hcHAudGFyLmd6Cm1wNkFoazY0WXN5ZGx2VTFBYTJIUm82WE9HSzVYWUNQS0k3RTA5Q2E4dm5NWTVQbU1pTkUxbXBEdmJRbTY0QVRFeVl2eTNkRzNWRTIvRGZoWkhWa0RnPT0K",
+      "url": "https://github.com/waseemmaya/nook-updates/releases/download/v0.13.2/Nook_aarch64.app.tar.gz"
     },
     "darwin-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSUTlkSGZiWDFFaWpJemxQK2RUbEY3RWI3aExacGlPWXFFajhHaDczVWF4SGdYUXh5K1B2cUdmNFBzcnZTMkZ2VndxMzIrdjBzMTJCQkYyaEFQY2hWaCtLSzZaRmdNdmdZPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkyMDU2OTYzCWZpbGU6Tm9vay5hcHAudGFyLmd6Ck52NUhaaTZsSi9QWjZicFcySXhBUGVCQ1BaTDdtWUNBTU8zN0daSFJIaXkyekZaazhSSEpHMVRUYzVXQXoyOHl5eDdiNXp0eW9neWluMnZaM3FyMENnPT0K",
-      "url": "https://github.com/waseemmaya/nook-updates/releases/download/v0.13.1/Nook_x64.app.tar.gz"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSUTlkSGZiWDFFaWhaS3g3eXpSUlp0WU1sWEZ0alRKemVaWnZCdERYVUo2SCtrdGRZT1hpYjlna1liUCtTNHZRZEgxUmFHcU9adDZ1dGdEeFluZEFaZEZ2S2xkdnZsVFFJPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk0MjIyMDU3CWZpbGU6Tm9vay5hcHAudGFyLmd6Ck51Y0JLSS9RZTUrNTJMK1JaQStzdmZRb0RaNjROaE85S1hjR0FNRGVGYzFsV01BRnA0QnFhL0MwQ2Z5YytoeDMvcFhjZmVQZkFINEg1MUUxUXpGckFRPT0K",
+      "url": "https://github.com/waseemmaya/nook-updates/releases/download/v0.13.2/Nook_x64.app.tar.gz"
     },
     "linux-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSUTlkSGZiWDFFaXRRaG5oMy9YZ0dNSExQWHRXWStVWFJ6aWNybmZGeTAyMVM0TkZOMC9oQWpoNEYxb21IaUs1SklKYXg4T3paMEFLRkdEaExWRHRraWlMTGRqcnZETFFVPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkyMDU3MjQ3CWZpbGU6Tm9va18wLjEzLjFfYW1kNjQuQXBwSW1hZ2UKckVHM0txL3I2cWoyc0NmR2c2NnhQaXJGTVgyLzJRWGJoWWoyOUFFVXNrUTlZQWhiSm9pRnhlM3ppWmkra2t6dXdHSW8wMUFTNjl4NUVPQ1A3UHY1Q0E9PQo=",
-      "url": "https://github.com/waseemmaya/nook-updates/releases/download/v0.13.1/Nook_amd64.AppImage"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSUTlkSGZiWDFFaXAwK1IvWEJFa2pzTURtOUFadDllRW94WTE0Q1FwN3oxUVdJRzRJc21KWGJvQ1Btand0ek1FdGw0dkVNR1VCWXpVcE9peWliUnhPc1BkWXZKUUlOZXd3PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk0MjIyNDQ3CWZpbGU6Tm9va18wLjEzLjJfYW1kNjQuQXBwSW1hZ2UKQTU4b3phLzVqWTFTT2R5L2RKSWhwQjJJUjZHLy81Ym9tTHlPWkRlTWFSdWp5OTN6ZXA5VkhKZ3lIMkRFSU51Yk5qdk10TGcxb2hlWDFMa3lrY1BPRGc9PQo=",
+      "url": "https://github.com/waseemmaya/nook-updates/releases/download/v0.13.2/Nook_amd64.AppImage"
     }
   }
 }
